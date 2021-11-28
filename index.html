@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fluorescence - Home</title>
+    <link rel='icon' href="./images/logo.png">
+    <link rel = "stylesheet" href="universal.css">
+    <link rel = "stylesheet" href="index.css">
+  </head>
+<body>
+  <div id="menu">
+    <p id="menu-name">Fluorescence</p>
+    <a href="./index.html" id="menu-home">Home</a>
+    <a href="./about.html" id="menu-about">About</a>
+    <a href="./winners.html" id="menu-winners">Winners</a>
+    <a href="./gallery.html" id="menu-gallery">Gallery</a>
+    <a href="./participate.html" id="menu-participate">Participate</a>
+    <button id="menu-contact" onclick="scrollContact()">Contact</button>
+    <a href="./references.html" id="menu-references">References</a>
+  </div>
+
+  <div id="title">
+    <image src="./images/titleimage.png" id="titleimage"></image>
+    <p id="titlename">FLUORESCENCE PHOTOGRAPHY<br>COMPETITION</p>
+  </div>
+
+  <div class="infosection">
+    <div class="infobox">
+      <p class="infoheader">About Us</p>
+      <p class="infotext">The Fluorescence Photography Competition awards showcase the great work 
+        produced by photographers all over the world today. We strive to discover talents value 
+        the growing visual arts community, while bringing awareness to the social issues we face.</p>
+      <a href="./about.html" class="infolink">View history</a>
+    </div>
+    <div class="yellowline">.</div>
+    <image class="infoimage" src="./images/viktor.png"></image>
+  </div>
+
+  <div class="infosection">
+    <image class="infoimage" src="./images/progress.png"></image>
+    <div class="yellowline">.</div>
+    <div class="infobox">
+      <p class="infoheader">Previous Winners</p>
+      <p class="infotext">Click below to view the winners from previous years! These were the top 
+        photos for the themes health and wellbeing, cultural awareness, education and learning, 
+        and environmental awareness.</p>
+      <a href="./winners.html" class="infolink">View winners</a>
+    </div>    
+  </div>
+
+  <div class="infosection">
+    <div class="infobox">
+      <p class="infoheader">Gallery</p>
+      <p class="infotext">Click here to view some of the best submissions from previous years! 
+        Since 2018, we have received and reviewed countless photos and submissions, and have 
+        seen some amazing things! </p>
+      <a href="./gallery.html" class="infolink">View gallery</a>
+    </div>
+    <div class="yellowline">.</div>
+    <image class="infoimage" src="./images/silco.png"></image>
+  </div>
+
+  <div class="infosection">
+    <image class="infoimage" src="./images/progress.png"></image>
+    <div class="yellowline">.</div>
+    <div class="infobox">
+      <p class="infoheader">Participate</p>
+      <p class="infotext">You can participate too! Every year we have a theme for your photos.
+         This year, our theme is social justice. Once you make your submission, you 
+         will be able to vote for other photos in different categories. The top three photos 
+         with the most votes in each category will become finalists. Then, our judges will 
+         determine the winners from the finalists.</p>
+      <a href="./participate.html" class="infolink">Join the competition</a>
+    </div>    
+  </div>
+
+  <div id="sponsors">
+    <p id="sponsorsheader">Our Sponsors</p>
+    <p id="sponsortext">Fluorescence’s sponsors help ensure we have the resources to hold our annual events.</p>
+  </div>
+
+  <div id="contact">
+    <p class="contactheader">Contact Us</p>
+    <div class="contactdetails">
+      <div class="contactdetail" style="margin-left: -25px">
+        <image src="./images/email.png" class="contactimage"></image>
+        <p class="contacttext">contact@flourescence.com</p>
+      </div>
+      <div class="contactdetail">
+        <image src="./images/phone.png" class="contactimage" style="width: 75px"></image>
+        <p class="contacttext">745-473-1365</p>
+      </div>
+      <div class="contactdetail">
+        <image src="./images/insta.png" class="contactimage" style="width: 75px"></image>
+        <p class="contacttext">@FluorescencePhotos</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function scrollContact() {
+    document.getElementById("contact").scrollIntoView({behavior: "smooth"});
+  }
+</script>
+
+</body>
+</html>
