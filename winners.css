@@ -1,0 +1,47 @@
+.winner {
+    text-align: center;
+    font-family: "Poppins";
+}
+.winnertitle {
+    font-size: 40px; 
+    font-weight: 700;
+}
+
+#yellowtext {
+    color: var(--maincolor);
+}
+
+.winnerinfo {
+    color: var(--maincolor);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.winnerimage {
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.yellowline2 {
+    height: 60px;
+    width: 15px;
+    background: var(--maincolor);
+    color: var(--maincolor);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+}
+
+.winnername {
+    font-size: 20px;
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: -16px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+}
