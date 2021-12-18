@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fluorescence - Home</title>
+    <link rel='icon' href="./images/logo.png">
+    <link rel = "stylesheet" href="universal.css">
+    <link rel = "stylesheet" href="winners.css">
+  </head>
+<body>
+  <div id="menu">
+    <p id="menu-name">Fluorescence</p>
+    <a href="./index.html" id="menu-home">Home</a>
+    <a href="./about.html" id="menu-about">About</a>
+    <a href="./winners.html" id="menu-winners">Winners</a>
+    <a href="./gallery.html" id="menu-gallery">Gallery</a>
+    <a href="./participate.html" id="menu-participate">Participate</a>
+    <button id="menu-contact" onclick="scrollContact()">Contact</button>
+    <a href="./references.html" id="menu-references">References</a>
+  </div>
+
+  <div class="winner" style="margin-top: 100px">
+      <p class="winnertitle"><span id="yellowtext">2018</span> - Environmental Awareness</p>
+      <p class="winnerinfo">"Progress Day"</p>
+      <image class="winnerimage" src="./images/progress.png"></image>
+      <p class="yellowline2"></p>
+      <p class="winnername">Richard Lin</p>
+  </div>
+  <div class="winner" style="margin-top: 100px">
+    <p class="winnertitle"><span id="yellowtext">2019</span> - Education and Learning</p>
+    <p class="winnerinfo">"Viktor"</p>
+    <image class="winnerimage" src="./images/viktor.png"></image>
+    <p class="yellowline2"></p>
+    <p class="winnername">Jerry Lin</p>
+</div>
+<div class="winner" style="margin-top: 100px">
+    <p class="winnertitle"><span id="yellowtext">2020</span> - Health and Wellbeing</p>
+    <p class="winnerinfo">"Silco's Negotiation"</p>
+    <image class="winnerimage" src="./images/silco.png"></image>
+    <p class="yellowline2"></p>
+    <p class="winnername">Joshua Cai</p>
+</div>
+<div class="winner" style="margin-top: 100px">
+    <p class="winnertitle"><span id="yellowtext">2021</span> - Cultural Awareness</p>
+    <p class="winnerinfo">"Asian Moment"</p>
+    <image class="winnerimage" src="./images/viktor.png"></image>
+    <p class="yellowline2"></p>
+    <p class="winnername">Harvyn Lim</p>
+</div>
+  
+
+  <div id="contact">
+    <p class="contactheader">Contact Us</p>
+    <div class="contactdetails">
+      <div class="contactdetail" style="margin-left: -25px">
+        <image src="./images/email.png" class="contactimage"></image>
+        <p class="contacttext">contact@flourescence.com</p>
+      </div>
+      <div class="contactdetail">
+        <image src="./images/phone.png" class="contactimage" style="width: 75px"></image>
+        <p class="contacttext">745-473-1365</p>
+      </div>
+      <div class="contactdetail">
+        <image src="./images/insta.png" class="contactimage" style="width: 75px"></image>
+        <p class="contacttext">@FluorescencePhotos</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function scrollContact() {
+    document.getElementById("contact").scrollIntoView({behavior: "smooth"});
+  }
+</script>
+
+</body>
+</html>
