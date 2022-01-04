@@ -160,8 +160,68 @@ body {
 .contactimage {
     width: 100px;
 }
+.contactimagesmall {
+    width: 75px;
+}
 
 .contacttext {
     font-family: "Montserrat";
     font-size: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .infosection {
+        display: block;
+    }
+    .yellowline {
+        width: 110vw;
+    }
+    .infobox {
+        width: 100vw;
+        border-radius: 60px;
+        padding-bottom: 75px;
+    }
+    .infoheader {
+        width: 100vw;
+        text-align: center;
+        font-size: 50px;
+        border-bottom: none;
+    }
+    .infotext {
+        line-height: 60px;
+        margin-bottom: 50px;
+    }
+    .infoimage {
+        width: 110vw;
+        height: 800px;
+        border-radius: 60px;
+    }  
+    #contact {
+        height: 1700px;
+        width: 110vw;
+        padding-top: 50px;
+        border-radius: 60px;
+    }
+    .contactdetails {
+        display: block;
+        margin-top: -100px;
+    }
+    .contactheader {
+        font-size: 55px;
+    }
+    .contactdetail {
+        margin-left: 0;
+        margin-top: 150px;
+    }
+    .contactimage {
+        width: 200px;
+    }
+    .contacttext {
+        font-size: 37px;
+    }
+    .contactimagesmall {
+        width: 175px;
+    }
+
 }
