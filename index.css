@@ -8,6 +8,12 @@
 
 #titleimage {
     -webkit-user-drag: none;
+    filter: brightness(130%);
+    background-image: url("./images/titleimage.png");
+    background-repeat: none;
+    background-size: contain;
+    width: 1100px; 
+    height: 485px;
 }
 
 #titlename {
@@ -16,6 +22,7 @@
     color: var(--maincolor);
     font-weight: 800;
     position: absolute;
+    text-shadow: 0px 0px 15px black;
 }
 
 #sponsors {
@@ -48,4 +55,38 @@
 #sponsorimage {
     margin-left: 40px;
     width: 200px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #title {
+        width: 108vw;
+        height: 1000px;
+    }
+    #titlename {
+        font-size: 100px;
+    }
+    #titleimage {
+        position: absolute;
+        height: 1000px;
+        background-size: 350%;
+        background-position: center;
+    }
+    #sponsors {
+        width: 110vw;
+        border-radius: 60px;
+    }
+    #sponsorsheader {
+        font-size: 55px;
+    }
+    #sponsortext {
+        font-size: 37px;
+        line-height: 60px;
+    }
+    #sponsorimages {
+        display: block;
+    }
+    #sponsorimage {
+        width: 550px;
+        margin-top: 100px;
+    }
 }
