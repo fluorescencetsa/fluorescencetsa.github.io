@@ -11,12 +11,35 @@
     text-align: center;
 }
 
+input[type="file"] {
+    display: none;
+}
+
 #upload {
     border: 4px solid var(--maincolor);
     width: 700px;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#uploadbutton {
+    background:rgba(255, 240, 157, 0.308);
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins";
+    color: var(--maincolor);
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.customupload {
+    cursor: pointer;
 }
 
 #labeled {
@@ -55,6 +78,25 @@
     transition: 0.3s;
 }
 
+#labeledbox {
+    font-family: "Poppins";
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 100px;
+}
+#textbox {
+    width: 500px;
+    height: 200px;
+    border: 3px solid var(--maincolor);
+    outline: none;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
 #submitbutton:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
 }
@@ -63,13 +105,15 @@
         width: 110vw;
     }
     #titletext {
-        font-size: 55px;
+        position: relative;
+        margin-top: 300px;
+        font-size: 75px;
     }
     #upload {
         height: 700px;
         border: 10px solid var(--maincolor);
     }
-    #labeled {
+    #labeled, #labeledbox {
         font-size: 55px;
     }
     #text {
@@ -84,5 +128,15 @@
         padding-bottom: 40px;
         padding-left: 60px;
         padding-right: 60px;
+    }
+    #upload {
+        width: 1000px;
+    }
+    #textbox {
+        width: 1000px;
+        border: 10px solid var(--maincolor);
+    }
+    #uploadbutton {
+        font-size: 55px;
     }
 }
