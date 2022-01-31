@@ -9,7 +9,7 @@
 #titleimage {
     -webkit-user-drag: none;
     filter: brightness(85%);
-    background-image: url("https://cdn.discordapp.com/attachments/922205197969817622/937525745780129792/titleimage.png");
+    background-image: url("./images/titleimage.png");
     background-repeat: none;
     background-size: contain;
     width: 1100px; 
