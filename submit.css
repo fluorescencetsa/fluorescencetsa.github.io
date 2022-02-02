@@ -10,6 +10,12 @@
 #photoform {
     text-align: center;
 }
+#photoformdetails {
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+    width: 506px;
+}
 
 input[type="file"] {
     display: none;
@@ -103,6 +109,12 @@ input[type="file"] {
 @media only screen and (max-width: 1024px) {
     #photoform {
         width: 110vw;
+    }
+    #photoformdetails {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
     }
     #titletext {
         position: relative;
