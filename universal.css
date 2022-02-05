@@ -75,6 +75,30 @@ body {
     filter: opacity(0%);
 }
 
+#backtop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    outline: none;
+    border: none;
+    background-color: var(--maincolor);
+    font-family: "Poppins";
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 20px;
+    z-index: 10000;
+}
+#backtop:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
 #contact {
     margin-top: 75px;
     width: 100%;
@@ -228,6 +252,10 @@ body {
     }
     #menu-contact {
         width: 634px;
+    }
+
+    #backtop {
+        font-size: 55px;
     }
 
     .infosection {
