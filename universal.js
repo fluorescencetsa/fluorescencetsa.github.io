@@ -29,3 +29,7 @@ function scrollContact() {
     document.getElementById("contact").scrollIntoView({behavior: "smooth"});
     count += 1;
 }   
+
+function scrolltop(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
