@@ -80,6 +80,10 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
+#theme {
+    font-size: 35px;
+}
+
 @media only screen and (max-width: 1024px) {
     #title {
         width: 110vw;
@@ -111,6 +115,9 @@
     #buttons {
         text-align: center;
         width: 110vw;
+    }
+    #theme {
+        font-size: 65px;
     }
 }
 
