@@ -1,3 +1,8 @@
+#menu-participate {
+    border-bottom: 2px solid var(--maincolor);
+    background-color: #fff1c6;
+}
+
 #title {
     margin-top: 100px;
     text-align: center;
@@ -51,7 +56,7 @@
     padding-bottom: 40px;
     padding-top: 40px;
     border-radius: 20px;    
-
+    background: white;
 }
 
 #buttons {
