@@ -1,3 +1,8 @@
+#menu-winners {
+    border-bottom: 2px solid var(--maincolor);
+    background-color: #fff1c6;
+}
+
 .winner {
     text-align: center;
     font-family: "Poppins";
