@@ -51,6 +51,7 @@ input[type="file"] {
 }
 .customupload {
     cursor: pointer;
+    display: flex;
 }
 
 #labeled {
