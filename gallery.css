@@ -1,3 +1,8 @@
+#menu-gallery {
+    border-bottom: 2px solid var(--maincolor);
+    background-color: #fff1c6;
+}
+
 #title {
     margin-top: 100px;
     text-align: center;
