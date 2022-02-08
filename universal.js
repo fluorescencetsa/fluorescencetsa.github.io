@@ -19,6 +19,7 @@ setInterval(function() {
     else if (width > 1024) {
         document.getElementById("menu").style.height = "65px";
     }
+
 }, 1000);
 
 function scrollContact() {
@@ -33,3 +34,8 @@ function scrollContact() {
 function scrolltop(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+function getFileName(myFile){
+    var file = myFile.files[0];  
+    document.getElementById("filename").innerHTML = file.name;
+ }
