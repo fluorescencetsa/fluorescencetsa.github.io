@@ -30,7 +30,7 @@
         <p id="titletext">Submit a Photo</p>
         <div id="photoformdetails">
           
-          <label id="labeled">Name (last, first): </label>
+          <label id="labeled">Name (Last, First): </label>
           <input type="text" id="text"><br>
 
           <label id="labeled">Email: </label>
@@ -49,19 +49,19 @@
           <input type="text" id="text"><br>
           
           <label id="labeled">ZIP Code: </label>
-          <input type="text" id="text"><br><br><br><br>
+          <input type="text" id="text"><br><br><br><br><br><br>
         </div>
 
         <label id="labeled">Title of Work: </label>
-        <input type="text" id="text"><br><br><br>
-        <label id="labeledbox">Artist Statement: </label><br>
+        <input type="text"  id="texttitle"><br><br><br>
+        <label id="labeledbox">Artist Statement <br><span id="artiststatement">(In 10 to 100 words, describe your work and how it relates to this year's theme)</span>:</label><br>
         <textarea type="text" id="textbox"></textarea><br><br>
         
         <div id="upload">
           <div id="uploadbutton">
             <label class="customupload">
-              <input type="file"/>
-                Click to Upload Photo<br>
+              <input id="fileuploads" name="photo" type="file" onchange="getFileName(this);"/>
+                <p id="filename">Click to Upload Photo</p><br>
             </label>
           </div>
         </div><br><br><br>
