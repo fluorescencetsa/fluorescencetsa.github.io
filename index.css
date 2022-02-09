@@ -24,10 +24,20 @@
 #titlename {
     font-family: "Poppins"; 
     font-size: 40px;
-    color: var(--maincolor);
+    color: rgb(255, 215, 129);
     font-weight: 800;
     position: absolute;
     text-shadow: 0px 0px 20px black;
+    animation: 1s textspacer;
+}
+
+@keyframes textspacer {
+    0% {
+        letter-spacing: 15px;
+    }
+    100% {
+        letter-spacing: 0px;
+    }
 }
 
 #sponsors {
