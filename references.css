@@ -1,4 +1,4 @@
-#menu-participate {
+#menu-references {
     border-bottom: 2px solid var(--maincolor);
     background-color: #fff1c6;
 }
@@ -7,7 +7,6 @@
     margin-top: 100px;
     text-align: center;
     margin-bottom: 150px;
-    text-shadow: 0px 0px 20px black;
 }
 
 #titleboxes {
@@ -48,46 +47,45 @@
     font-size: 35px;
 }
 
-.infoboxs {
-    width: 900px;
+#references {
+    width: 600px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
-    padding-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
     padding-top: 40px;
-    border-radius: 20px;    
+    padding-bottom: 40px;
     background: white;
 }
 
-#buttons {
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: -5px;
-}
-#photobutton, #votebutton {
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: var(--maincolor);
-    text-decoration: none;
-    color: white;
-    font-family: "Poppins";
-    font-weight: 700;
+#titles {
     font-size: 20px;
-    border-radius: 10px;
-    margin-right: 20px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-    transition: 0.3s;
-}
-#photobutton:hover, #votebutton:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    font-family: "Poppins";
+    color: var(--maincolor);
+    font-weight: 700;
+    padding-bottom: 5px;
 }
 
-#theme {
-    font-size: 35px;
+#link {
+    font-family: "Poppins";
+    text-decoration: none;
+    color: #4a86e8;
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+    transition: 0.25s;
+    font-size: 16px;
+    font-weight: 600;
+}
+#link:hover {
+    border-bottom: 2px solid #4a86e8;
+}
+
+#text {
+    margin-top: 50px;
+    font-family: "Poppins";
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -105,25 +103,18 @@
         width: 110vw;
         margin-top: 215px;
     }
-    .infoboxs {
-        width: 100vw;
+
+    #references {
+        width: 101vw;
+        height: 800px;
     }
-    #boldedtext {
-        font-weight: bold;
+    #titles {
+        font-size: 55px;
     }
-    #photobutton, #votebutton {
-        font-size: 45px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-right: 60px;
-        padding-left: 60px;
+    #link {
+        font-size: 40px;
     }
-    #buttons {
-        text-align: center;
-        width: 100vw;
-    }
-    #theme {
-        font-size: 65px;
+    #text {
+        font-size: 35px;
     }
 }
-
