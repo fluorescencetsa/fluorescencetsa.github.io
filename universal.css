@@ -14,6 +14,16 @@ body {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--maincolor);
+}
+
 #menu {
     background: rgb(255, 255, 255);
     position: fixed;
@@ -297,7 +307,10 @@ body {
         width: 110vw;
         height: 800px;
         border-radius: 60px;
-    }  
+    } 
+    .infoimage:hover {
+        transform: scale(1);
+    }
     #contact {
         height: 1700px;
         width: 110vw;
