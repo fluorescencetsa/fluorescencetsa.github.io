@@ -60,9 +60,10 @@
 }
 
 #buttons {
-    width: 1000px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+    margin-left: -5px;
 }
 #photobutton, #votebutton {
     text-align: center;
@@ -119,7 +120,7 @@
     }
     #buttons {
         text-align: center;
-        width: 110vw;
+        width: 100vw;
     }
     #theme {
         font-size: 65px;
