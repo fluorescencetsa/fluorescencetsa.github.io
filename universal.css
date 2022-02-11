@@ -7,7 +7,7 @@
 }
 
 body {
-    background: whitesmoke;
+    background: rgb(239, 243, 248);
     padding: 0; 
     margin: 0;
     overflow-x: hidden !important;
@@ -121,7 +121,7 @@ body {
     margin-right: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background: white;
+    background: rgb(255, 255, 255);
 }
 
 .infosection {
