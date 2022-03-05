@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 
-
 :root {
     --maincolor: #f1c232;
 }
@@ -99,6 +98,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
+    height: 100px;
     padding-bottom: 15px;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
@@ -109,6 +109,13 @@ body {
 #backtop:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
     transform: scale(1.1);
+}
+#toparrow {
+    margin-bottom: -10px;
+    margin-top: 0px;
+    font-size: 30px;
+    font-family: "Poppins";
+    transform: rotateZ(90deg);
 }
 
 #contact {
@@ -183,7 +190,7 @@ body {
     text-decoration: none;
     color: #4a86e8;
     padding-bottom: 5px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid transparent;
     transition: 0.25s;
 }
 .infolink:hover {
@@ -279,6 +286,11 @@ body {
     }
 
     #backtop {
+        font-size: 55px;
+        right: 20px;
+        height: 200px;
+    }
+    #toparrow {
         font-size: 55px;
     }
 
