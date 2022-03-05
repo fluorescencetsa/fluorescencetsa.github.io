@@ -111,7 +111,7 @@
 
  .arrow, .arrow1, .arrow2, .arrow3, .arrow4 {
      font-family: "Poppins";
-     transform: rotateZ(270deg);
+     transform: rotateZ(90deg);
      background: var(--maincolor);
      display: flex;
      justify-content: center;
@@ -131,7 +131,7 @@
  }
 
  .arrow.clicked, .arrow1.clicked, .arrow2.clicked, .arrow3.clicked, .arrow4.clicked {
-    transform: rotateZ(90deg);
+    transform: rotateZ(270deg);
  }
 
 @media only screen and (max-width: 1024px) {
