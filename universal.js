@@ -5,7 +5,7 @@ function openmenu() {
         document.getElementById("menu").style.height = "200px";
     }
     else {
-        document.getElementById("menu").style.height = "1600px";
+        document.getElementById("menu").style.height = "1650px";
     }
     /* Odd = Open menu
        Even = Closed meun */
@@ -39,3 +39,22 @@ function getFileName(myFile){
     var file = myFile.files[0];  
     document.getElementById("filename").innerHTML = file.name;
  }
+
+$('.question').on('click', function() {
+    $('.answer').toggleClass('clicked');
+    $('.arrow').toggleClass('clicked');
+});
+$('.question1').on('click', function() {
+    $('.answer1').toggleClass('clicked');
+    $('.arrow1').toggleClass('clicked');
+});
+$('.question2').on('click', function() {
+    $('.answer2').toggleClass('clicked');
+    $('.arrow2').toggleClass('clicked');
+});
+$('.question3').on('click', function() {
+    $('.answer3').toggleClass('clicked');
+    $('.arrow3').toggleClass('clicked');
+});
+
+
