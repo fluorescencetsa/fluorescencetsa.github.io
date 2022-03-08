@@ -6,6 +6,7 @@
     <link rel='icon' href="./images/logo.png">
     <link rel = "stylesheet" href="universal.css">
     <link rel = "stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   </head>
 <body>
   <div id="menu">
@@ -35,7 +36,7 @@
     <p id="titletext" style="text-shadow:0px 0px 10px black;">About Us</p>
   </div>
 
-  <div class="infosection">
+  <div class="infosection" data-aos="fade-up-left" data-aos-delay="150">
     <div class="infobox">
       <p class="infoheader">Our Competition</p>
       <p class="infotext">The Fluorescence Photography Contest is an annual contest 
@@ -49,7 +50,7 @@
     <image class="infoimage" src="./images/palms.jpg" style="filter: brightness(100%);"></image>
   </div>
 
-  <div class="infosection" style="margin-top: 50px">
+  <div class="infosection" style="margin-top: 50px" data-aos="fade-up-right" data-aos-delay="150">
     <image class="infoimage" src="./images/buildings.jpg"></image>
     <div class="yellowline">.</div>
     <div class="infobox">
@@ -62,26 +63,26 @@
     </div>
   </div>
   <div id="timeline">
-    <p id="timelineheader">Our History</p>
+    <p id="timelineheader" data-aos="zoom-in">Our History</p>
     <div class="timelinebox">
-      <p class="timelineyear-left">2018</p>
-      <p class="timelineinfo-left">The Fluorescence Photography Contest was held for the first time.</p>
+      <p class="timelineyear-left" data-aos="fade-right" data-aos-delay="150">2018</p>
+      <p class="timelineinfo-left" data-aos="fade-left" data-aos-delay="150">The Fluorescence Photography Contest was held for the first time.</p>
     </div>
     <div class="timelinebox">
-      <p class="timelineinfo-right">The Fluorescence Photography Contest became an annual event.</p>
-      <p class="timelineyear-right">2019</p>
+      <p class="timelineinfo-right" data-aos="fade-right" data-aos-delay="150">The Fluorescence Photography Contest became an annual event.</p>
+      <p class="timelineyear-right" data-aos="fade-left" data-aos-delay="150">2019</p>
     </div>
     <div class="timelinebox">
-      <p class="timelineyear-left">2020</p>
-      <p class="timelineinfo-left">We began to run the contest online due to the Covid-19 pandemic.</p>
+      <p class="timelineyear-left" data-aos="fade-right" data-aos-delay="150">2020</p>
+      <p class="timelineinfo-left" data-aos="fade-left" data-aos-delay="150">We began to run the contest online due to the Covid-19 pandemic.</p>
     </div>
     <div class="timelinebox">
-      <p class="timelineinfo-right">Due to the continuous impact of the pandemic, the contest was held online again. </p>
-      <p class="timelineyear-right">2021</p>
+      <p class="timelineinfo-right" data-aos="fade-right" data-aos-delay="150">Due to the continuous impact of the pandemic, the contest was held online again. </p>
+      <p class="timelineyear-right" data-aos="fade-left" data-aos-delay="150">2021</p>
     </div>
     <div class="timelinebox">
-      <p class="timelineyear-left">2022</p>
-      <p class="timelineinfo-left">The contest has reached its 5th anniversary!</p>
+      <p class="timelineyear-left" data-aos="fade-right" data-aos-delay="150">2022</p>
+      <p class="timelineinfo-left" data-aos="fade-left" data-aos-delay="150">The contest has reached its 5th anniversary!</p>
     </div>
   </div>
   
@@ -105,5 +106,12 @@
     </div>
   </div>
   <script src="universal.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+    setInterval(function() {
+      if (window.screen.width < 1024) { AOS.init({disable: true});}
+    }, 1000);
+  </script>
 </body>
 </html>
