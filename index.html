@@ -6,6 +6,7 @@
     <link rel='icon' href="./images/logo.png">
     <link rel = "stylesheet" href="universal.css">
     <link rel = "stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   </head>
 <body>
   <div id="menu">
@@ -32,7 +33,7 @@
     <p id="titlename">FLUORESCENCE PHOTOGRAPHY<br>COMPETITION</p>
   </div>
 
-  <div class="infosection">
+  <div class="infosection" data-aos="fade-up-left" data-aos-delay="150">
     <div class="infobox">
       <p class="infoheader">About Us</p>
       <p class="infotext">The Fluorescence Photography Competition awards showcase the great work 
@@ -44,7 +45,7 @@
     <image class="infoimage" src="./images/balloons.jpg" style="filter: brightness(110%)"></image>
   </div>
 
-  <div class="infosection">
+  <div class="infosection" data-aos="fade-up-right" data-aos-delay="150">
     <image class="infoimage" src="./images/leaf.jpg"></image>
     <div class="yellowline">.</div>
     <div class="infobox">
@@ -56,7 +57,7 @@
     </div>    
   </div>
 
-  <div class="infosection">
+  <div class="infosection" data-aos="fade-up-left" data-aos-delay="150">
     <div class="infobox">
       <p class="infoheader">Gallery</p>
       <p class="infotext">Since 2018, we have received and reviewed countless photos and have 
@@ -69,7 +70,7 @@
     <image class="infoimage" src="./images/ocean.jpg"></image>
   </div>
 
-  <div class="infosection">
+  <div class="infosection" data-aos="fade-up-right" data-aos-delay="150">
     <image class="infoimage" src="./images/beach.jpg"></image>
     <div class="yellowline">.</div>
     <div class="infobox">
@@ -82,7 +83,7 @@
     </div>    
   </div>
 
-  <div id="sponsors">
+  <div id="sponsors" data-aos="fade-up">
     <p id="sponsorsheader">Our Sponsors</p>
     <p id="sponsortext">Fluorescence’s sponsors help ensure we have the resources to hold our annual events.</p>
     <div id="sponsorimages">
@@ -111,5 +112,12 @@
     </div>
   </div>
   <script src="universal.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+    setInterval(function() {
+      if (window.screen.width < 1024) { AOS.init({disable: true});}
+    }, 1000);
+  </script>
 </body>
 </html>
