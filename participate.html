@@ -6,6 +6,7 @@
     <link rel='icon' href="./images/logo.png">
     <link rel = "stylesheet" href="universal.css">
     <link rel = "stylesheet" href="participate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   </head>
 <body>
   <div id="menu">
@@ -36,13 +37,13 @@
     <p id="titletext">Submissions Are <span style="color: var(--maincolor)">Open</span>!</p>
   </div>
 
-  <div class="infosection">
+  <div class="infosection" data-aos="fade-up">
     <div class="infoboxs" style="background: #fff9da">
-      <p class="infoheader" style="width: 100%; border: none; text-align: center; color: black;">The Fluorescence Competition's theme for 2022 is<br><br><span id="theme" style="color: var(--maincolor);">Social Justice</span>
+      <p class="infoheader" style="width: 100%; border: none; text-align: center; color: black;">The Fluorescence Competition's theme for 2022 is<br><br><span id="theme" style="color: var(--maincolor);" >Social Justice</span>
     </div>
   </div>
 
-  <div class="infosection" style="margin-top: 100px;">
+  <div class="infosection" style="margin-top: 100px;" data-aos="fade-left">
     <div class="infoboxs">
       <p class="infoheader">Submit Photo</p>
       <p class="infotext"><b>Accepted forms of photography include:</b> A single photo, panoramic, multiple exposure, negative sandwich, or photogram.<br>
@@ -50,6 +51,7 @@
         <b>Copyright: </b>Usage of any copyrighted material is not permitted in any photographic submission.<br>
         <br>
         <b>Submission Requirements:</b><br>
+        - Participants must be at least 18 years old by the submission due date.<br>
         - Only one photo may be submitted. <br>
         - Each entry must be the original work of the participant. <br>
         - The submission should be related to the 2022 theme of “Social Justice.”<br>
@@ -66,21 +68,22 @@
   </div>
   
   
-  <div class="infosection" style="margin-top: 50px;">
+  <div class="infosection" style="margin-top: 50px;" data-aos="fade-right">
     <div class="infoboxs">
       <p class="infoheader">Awards</p>
       <p class="infotext">
-        <b>First Place Competition Winner: </b>500 dollar cash prize with photo and statement feature on the website.<br><br>
-        <b>Honorable Mention: </b>200 dollar cash prize with photo feature in the Fluorescence virutal gallery.<br>
-        <b>Best Technical Skill: </b>200 dollar cash prize with photo feature in the Fluorescence virutal gallery.<br>
-        <b>Most Creative: </b>200 dollar cash prize with photo feature in the Fluorescence virutal gallery.
+        <b>First Place Competition Winner: </b>500 dollar cash prize, first place medal and certificate, and  statement feature on the website.<br><br>
+        <b>Honorable Mention: </b>200 dollar cash prize, honorable mention certificate, and feature in the Fluorescence virutal gallery.<br>
+        <b>Best Technical Skill: </b>200 dollar cash prize, best technical skill certificate, and feature in the Fluorescence virutal gallery.<br>
+        <b>Most Creative: </b>200 dollar cash prize, most creative certificate, and feature in the Fluorescence virutal gallery.<br><br>
+        An enclosed medal, certificate, and cash prize will be mailed within two weeks. If you do not receive your award after two weeks, please contact us at contact@fluorescence.com.
       </p>
     </div>
   </div>
 
   
 
-  <div class="infosection" style="margin-top: 50px;">
+  <div class="infosection" style="margin-top: 50px;" data-aos="fade-left">
     <div class="infoboxs">
       <p class="infoheader">Vote</p>
       <p class="infotext">Voting will 
@@ -116,5 +119,12 @@
     </div>
   </div>
   <script src="universal.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init()
+      setInterval(function() {
+        if (window.screen.width < 1024) { AOS.init({disable: true});}
+      }, 1000);
+  </script>
 </body>
 </html>
