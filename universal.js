@@ -56,5 +56,7 @@ $('.question3').on('click', function() {
     $('.answer3').toggleClass('clicked');
     $('.arrow3').toggleClass('clicked');
 });
-
-
+$('.question4').on('click', function() {
+    $('.answer4').toggleClass('clicked');
+    $('.arrow4').toggleClass('clicked');
+});
