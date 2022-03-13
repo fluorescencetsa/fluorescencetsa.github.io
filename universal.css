@@ -119,19 +119,6 @@ body {
     transform: rotateZ(90deg);
 }
 
-#contact {
-    margin-top: 75px;
-    width: 100%;
-    height: 290px; 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background: rgb(255, 255, 255);
-}
-
 .infosection {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -198,45 +185,67 @@ body {
     border-bottom: 2px solid #4a86e8;
 }
 
-.contactheader {
+#contact {
+    margin-top: 75px;
+    width: 100%;
+    height: 400px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgb(255, 255, 255);
+    border-top: 4px solid var(--maincolor);
+    display: flex;
+    justify-content: center;
+}
+#contactheader {
     font-family: "Poppins";
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--maincolor);
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    border-bottom: 4px solid var(--maincolor);
-    width: 700px;
-
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
+}
+#copyright {
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--maincolor);
+    text-align: left;
 }
 
 .contactdetails {
-    padding-top: 20px;
+    padding-top: 35px;
+    margin-left: 150px;
     padding-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    text-align: center;
+    text-align: left;
 }
-
-.contactdetail {
-    margin-left: 100px;
+.contacttitle {
+    font-family: "Poppins";
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--maincolor);
+    text-align: left;
 }
-
-.contactimage {
-    width: 100px;
-}
-.contactimagesmall {
-    width: 75px;
-}
-
-.contacttext {
+.contactinfo {
+    font-size: 17px;
     font-family: "Montserrat";
-    font-size: 15px;
+    line-height: 30px;
 }
+.contactdetail {
+    width: 400px;
+}
+
+#social {
+    width: 50px;
+    transition: 0.2s;
+}
+#social:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 1024px) {
     #menu {
@@ -325,30 +334,44 @@ body {
         transform: scale(1);
     }
     #contact {
-        height: 1700px;
+        height: 2200px;
         width: 110vw;
+        display: block;
         padding-top: 50px;
         border-radius: 60px;
+        text-align: center;
     }
-    .contactdetails {
-        display: block;
-        margin-top: -100px;
-    }
-    .contactheader {
-        font-size: 55px;
+    #contactheader {
+        font-size: 100px;
+        text-align: center;
+        width: 80vw;
     }
     .contactdetail {
-        margin-left: 0;
-        margin-top: 150px;
+        text-align: center; 
+        width: 80vw;
     }
-    .contactimage {
-        width: 200px;
+    #social {
+        width: 120px;
     }
-    .contacttext {
-        font-size: 37px;
+
+    #copyright {
+        font-size: 50px;
+        width: 80vw;
+        text-align: center;
     }
-    .contactimagesmall {
-        width: 175px;
+    
+    .contactdetails {
+       display: block;
     }
+    .contacttitle {
+        margin-top: 100px;
+        font-size: 60px;
+        text-align: center;
+    }
+    .contactinfo {
+        font-size: 40px;
+        line-height: 90px;
+    }
+
 
 }
