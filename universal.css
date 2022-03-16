@@ -50,7 +50,7 @@ body {
     font-weight: 700;
 }
 
-#menu-home, #menu-about, #menu-winners, #menu-gallery, #menu-participate, #menu-contact, #menu-references {
+#menu-home, #menu-about, #menu-winners, #menu-gallery, #menu-participate, #menu-contact, #menu-references, #menu-login {
     margin-left: 10px;
     text-decoration: none;
     background: rgb(255, 255, 255);
@@ -66,8 +66,15 @@ body {
     padding-bottom: 10px;
     transition: 0.25s;
 }
+#menu-login {
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 70px;
+    color: var(--maincolor);
+}
 
-#menu-home:hover, #menu-about:hover, #menu-winners:hover, #menu-gallery:hover, #menu-participate:hover, #menu-references:hover, #menu-contact:hover {
+#menu-home:hover, #menu-about:hover, #menu-winners:hover, #menu-gallery:hover, #menu-participate:hover, #menu-references:hover, #menu-contact:hover, #menu-login:hover {
     border-bottom: 2px solid var(--maincolor);
     background-color: #fff1c6;
 }
@@ -138,7 +145,7 @@ body {
     background: rgb(255, 255, 255);
 }
 
-.infoheader {
+.infoheader, .infoheader1 {
     font-family: "Poppins";
     font-size: 25px;
     font-weight: 700;
@@ -146,6 +153,9 @@ body {
     border-bottom: 4px solid var(--maincolor);
     width: 250px;
     padding-bottom: 10px;
+}
+.infoheader1 {
+    width: 360px;
 }
 
 .yellowline {
@@ -183,6 +193,7 @@ body {
 }
 .infolink:hover {
     border-bottom: 2px solid #4a86e8;
+    cursor: pointer;
 }
 
 #contact {
@@ -190,8 +201,6 @@ body {
     width: 100%;
     height: 400px; 
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     background: rgb(255, 255, 255);
     border-top: 4px solid var(--maincolor);
     display: flex;
@@ -291,6 +300,16 @@ body {
         margin-top: 30px;
 
     }
+    #menu-login {
+        font-size: 55px;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        margin-top: 1450px;
+        text-align: center;
+        
+    }
     #menu-contact {
         width: 634px;
     }
@@ -315,7 +334,7 @@ body {
         border-radius: 60px;
         padding-bottom: 75px;
     }
-    .infoheader {
+    .infoheader, .infoheader1 {
         width: 100vw;
         text-align: center;
         font-size: 50px;
