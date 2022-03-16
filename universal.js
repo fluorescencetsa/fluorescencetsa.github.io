@@ -1,3 +1,4 @@
+/*menu*/
 var count = 0;
 function openmenu() {
     count += 1;
@@ -5,7 +6,7 @@ function openmenu() {
         document.getElementById("menu").style.height = "200px";
     }
     else {
-        document.getElementById("menu").style.height = "1650px";
+        document.getElementById("menu").style.height = "1900px";
     }
     /* Odd = Open menu
        Even = Closed meun */
@@ -31,15 +32,18 @@ function scrollContact() {
     count += 1;
 }   
 
+/*back to top button*/
 function scrolltop(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+/*submit photo*/
 function getFileName(myFile){
     var file = myFile.files[0];  
     document.getElementById("filename").innerHTML = file.name;
  }
 
+ /*faqs*/
 $('.question').on('click', function() {
     $('.answer').toggleClass('clicked');
     $('.arrow').toggleClass('clicked');
@@ -60,3 +64,55 @@ $('.question4').on('click', function() {
     $('.answer4').toggleClass('clicked');
     $('.arrow4').toggleClass('clicked');
 });
+
+/*login*/
+function login() {
+    if (document.getElementById("username").value == "John" && document.getElementById("pass").value == "12345") {
+        localStorage.setItem("logged", "Account");
+        location.href = "./index.html";
+    }
+    else {
+        document.getElementById("error").style.color = "red";
+    }
+}
+
+/*profile*/
+function save() {
+    fn = document.getElementById("fn").value
+    ln = document.getElementById("ln").value
+    ag = document.getElementById("ag").value
+    em = document.getElementById("em").value
+    ph = document.getElementById("ph").value
+    ph2 = document.getElementById("ph2").value
+    ph3 = document.getElementById("ph3").value
+    ma = document.getElementById("ma").value
+    ci = document.getElementById("ci").value
+    st = document.getElementById("st").value
+    zp = document.getElementById("zp").value
+    
+    if (fn=="" || ln=="" || ag=="" || em=="" || ph=="" || ph2=="" || ph3=="" || ma=="" || ci=="" || st=="" || zp=="") {
+        document.getElementById("message").style.color = "transparent";
+        document.getElementById("error").style.color = "red";
+    }
+    else {
+        localStorage.setItem("fn", fn);
+        localStorage.setItem("ln", ln);
+        localStorage.setItem("ag", ag);
+        localStorage.setItem("em", em);
+        localStorage.setItem("ph", ph);
+        localStorage.setItem("ph2", ph2);
+        localStorage.setItem("ph3", ph3);
+        localStorage.setItem("ma", ma);
+        localStorage.setItem("ci", ci);
+        localStorage.setItem("st", st);
+        localStorage.setItem("zp", zp);
+        document.getElementById("error").style.color = "transparent";
+        document.getElementById("message").style.color = "green";
+    }
+}
+
+function logout() {
+    localStorage.removeItem("logged");
+    location.href = "./login.html";
+}
+
