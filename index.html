@@ -24,6 +24,7 @@
           <button id="menu-contact" onclick="scrollContact()">Contact</button>
           <a href="./references.html" id="menu-references">References</a>
       </div>
+      <a href="./login.html" id="menu-login">Log In</a>
   </div>
 
   <button id="backtop" onclick="scrolltop()"><p id="toparrow"><</p>Top</button>
@@ -122,6 +123,11 @@
     setInterval(function() {
       if (window.screen.width < 1024) { AOS.init({disable: true});}
     }, 1000);
+    window.addEventListener("load", function() {
+      if (localStorage.getItem("logged") == "Account") {
+        document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
+      }
+    });
   </script>
 </body>
 </html>
