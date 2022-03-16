@@ -9,21 +9,22 @@
 </head>
 <body>
   <div id="menu">
-      <div id="menucontent">
+    <div id="menucontent">
         <p id="menu-name"><a href="./index.html" style="text-decoration: none; color: var(--maincolor);">Fluorescence</a></p>
-          <button id="menubutton" onclick="openmenu()">.</button>
-      </div>
-      <div id="tabs">
-          <a href="./index.html" id="menu-home">Home</a>
-          <a href="./about.html" id="menu-about">About</a>
-          <a href="./winners.html" id="menu-winners">Winners</a>
-          <a href="./gallery.html" id="menu-gallery">Gallery</a>
-          <a href="./participate.html" id="menu-participate" style = "border-bottom: 2px solid var(--maincolor); background-color: #fff1c6;">Participate</a>
-          <a href="./faqs.html" id="menu-participate">FAQs</a>
-          <button id="menu-contact" onclick="scrollContact()">Contact</button>
-          <a href="./references.html" id="menu-references">References</a>
-      </div>
-  </div>
+        <button id="menubutton" onclick="openmenu()">.</button>
+    </div>
+    <div id="tabs">
+        <a href="./index.html" id="menu-home">Home</a>
+        <a href="./about.html" id="menu-about">About</a>
+        <a href="./winners.html" id="menu-winners">Winners</a>
+        <a href="./gallery.html" id="menu-gallery">Gallery</a>
+        <a href="./participate.html" id="menu-participate">Participate</a>
+        <a href="./faqs.html" id="menu-participate">FAQs</a>
+        <button id="menu-contact" onclick="scrollContact()">Contact</button>
+        <a href="./references.html" id="menu-references">References</a>
+    </div>
+    <a href="./login.html" id="menu-login">Log In</a>
+</div>
 
   <button id="backtop" onclick="scrolltop()"><p id="toparrow"><</p>Top</button>
 
@@ -62,5 +63,12 @@
   </div>
 </div>
   <script src="universal.js"></script>
+  <script>
+window.addEventListener("load", function() {
+      if (localStorage.getItem("logged") == "Account") {
+        document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
+      }
+    });
+  </script>
 </body>
 </html>
