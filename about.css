@@ -40,11 +40,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 310px;
+    top: 290px;
     font-family: "Poppins";
     font-weight: 700;
     color: white;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 #timeline {
@@ -149,11 +149,11 @@
     }
 
     #timeline {
-        margin-top: 100px;
+        margin-top: 200px;
     }
     
     #timelineheader {
-        font-size: 50px;
+        font-size: 60px;
         width: 110vw;
         border: none;
     }
