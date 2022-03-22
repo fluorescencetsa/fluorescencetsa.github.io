@@ -20,7 +20,7 @@
         <a href="./gallery.html" id="menu-gallery">Gallery</a>
         <a href="./participate.html" id="menu-participate">Participate</a>
         <a href="./faqs.html" id="menu-participate">FAQs</a>
-        <button id="menu-contact" onclick="scrollContact()">Contact</button>
+        <a href="./chat.html" id="menu-chat">Chat</a>
         <a href="./references.html" id="menu-references">References</a>
     </div>
     <a href="./login.html" id="menu-login">Log In</a>
@@ -32,11 +32,11 @@
         <p id="titletext">Submit a Photo</p>
         <label id="labeled">Title of Work: </label>
         <input type="text"  id="titlework"><br><br><br>
-        <label id="labeledbox">Artist Statement <br><span id="artiststatement">(In 10 to 100 words, describe your work and how it relates to this year's theme of Social Justice)</span></label><br>
+        <label id="labeledbox">Artist Statement <br><span id="artiststatement" maxlength=250>(In under 250 characters, describe your work and how it relates to this year's theme of Social Justice)</span></label><br>
         <textarea type="text" id="statement"></textarea>
         
         <br><br>
-        <p id="wordcount">0/100 Words</p>
+        <p id="wordcount">0/250 Characters</p>
         <div id="upload">
           <div id="uploadbutton">
             <label class="customupload">
@@ -58,9 +58,9 @@
       <div class="contactdetails">
         <div class="contactdetail">
           <p id="contactheader">Fluorescence<br>Photography<br>Competition</p>
-          <image src="./images/facebook.png" id="social"></image>
-          <image src="./images/twitter.png" style="margin-left: 10px;" id="social"></image>
-          <image src="./images/youtube.png" style="margin-left: 10px;" id="social"></image>
+          <image src="./images/facebook1.png" id="social"></image>
+          <image src="./images/twitter1.png" style="margin-left: 10px;" id="social"></image>
+          <image src="./images/youtube1.png" style="margin-left: 10px;" id="social"></image>
           <p id="copyright">Copyright © 2018 - 2022 Fluorescence</p>
   
         </div>
@@ -89,8 +89,10 @@
       }
     });
 
+    document.getElementById("statement").maxLength = "250";
     setInterval(() => {
-      document.getElementById("wordcount").innerHTML = document.getElementById("statement").value.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/) .length - 1 + "/100 Words";
+      let artiststatement = document.getElementById("statement").value;
+      document.getElementById("wordcount").innerHTML = artiststatement.length + "/250 Characters";
     }, 10);
 
     function submitphoto() {
