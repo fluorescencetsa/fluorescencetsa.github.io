@@ -27,6 +27,12 @@
     text-align: center;
     padding-top: 0px;
 }
+#rightright {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    width: 350px;
+}
 #righttitle {
     font-family: "Poppins";
     color: var(--maincolor);
@@ -95,3 +101,60 @@
     color: black;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 1024px) {
+    #box {
+        margin-top: 300px;
+        width: 110vw;
+        display: block;
+        height: 1500px;
+    }
+    #left {
+        width: 100%;
+        height: 0;
+        border: none;
+    }
+    #lefttitle {
+        opacity: 0;
+        font-size: 0;
+    }
+    #copyright {
+        opacity: 0;
+        font-size: 0;
+    }
+    #right {
+        width: 100%;
+    }
+    #righttitle {
+        font-size: 65px;
+    }
+    #rightright {
+        width: 100%;
+        text-align: center;
+    }
+    #labeled {
+        font-size: 45px;
+        width: 1000px;
+        
+    }
+    #username, #pass {
+        width: 800px;
+        height: 100px;
+        font-size: 40px;
+        padding-left: 50px;
+        border: 7px solid var(--maincolor);
+    }
+    .login {
+        width: 350px;
+        font-size: 50px;
+        height: 150px;
+    }
+    #error {
+        font-size: 40px;
+    }
+    #note {
+        font-size: 40px;
+        width: 80%;
+    }
+}
+
