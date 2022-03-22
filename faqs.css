@@ -36,11 +36,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 310px;
+    top: 300px;
     font-family: "Poppins";
     font-weight: 700;
     color: white;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 #faqsection {
@@ -171,4 +171,5 @@
     .arrow, .arrow1, .arrow2, .arrow3, .arrow4 {
         opacity: 0;
     }
+    
 }
