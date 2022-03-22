@@ -23,15 +23,6 @@ setInterval(function() {
 
 }, 1000);
 
-function scrollContact() {
-    let width = window.screen.width;
-    if (width < 1024 && count % 2 != 0) {
-        document.getElementById("menu").style.height = "200px";
-    }
-    document.getElementById("contact").scrollIntoView({behavior: "smooth"});
-    count += 1;
-}   
-
 /*back to top button*/
 function scrolltop(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -78,9 +69,9 @@ function login() {
 
 /*profile*/
 function save() {
+    un = document.getElementById("un").value
     fn = document.getElementById("fn").value
     ln = document.getElementById("ln").value
-    ag = document.getElementById("ag").value
     em = document.getElementById("em").value
     ph = document.getElementById("ph").value
     ph2 = document.getElementById("ph2").value
@@ -90,14 +81,14 @@ function save() {
     st = document.getElementById("st").value
     zp = document.getElementById("zp").value
     
-    if (fn=="" || ln=="" || ag=="" || em=="" || ph=="" || ph2=="" || ph3=="" || ma=="" || ci=="" || st=="" || zp=="") {
+    if (un=="" || fn=="" || ln=="" || em=="" || ph=="" || ph2=="" || ph3=="" || ma=="" || ci=="" || st=="" || zp=="") {
         document.getElementById("message").style.color = "transparent";
         document.getElementById("error").style.color = "red";
     }
     else {
+        localStorage.setItem("un", un);
         localStorage.setItem("fn", fn);
         localStorage.setItem("ln", ln);
-        localStorage.setItem("ag", ag);
         localStorage.setItem("em", em);
         localStorage.setItem("ph", ph);
         localStorage.setItem("ph2", ph2);
