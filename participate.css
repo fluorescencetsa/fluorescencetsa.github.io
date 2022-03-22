@@ -36,11 +36,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 310px;
+    top: 290px;
     font-family: "Poppins";
     font-weight: 700;
     color: white;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 
@@ -127,6 +127,13 @@
     .infoboxs {
         width: 100vw;
     }
+    .infoboxs1 {
+        width: 98vw;
+    }
+    #countdowninfo {
+        font-size: 30px;
+    }
+
     #boldedtext {
         font-weight: bold;
     }
@@ -142,7 +149,7 @@
         width: 100vw;
     }
     #theme {
-        font-size: 65px;
+        font-size: 75px;
     }
 }
 
