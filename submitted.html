@@ -1,75 +1,98 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Fluorescence - Photo Submitted!</title>
-    <link rel='icon' href="./images/logo.png">
-    <link rel = "stylesheet" href="universal.css">
-    <link rel = "stylesheet" href="submitted.css">
-</head>
-<body>
-  <div id="menu">
-    <div id="menucontent">
-        <p id="menu-name"><a href="./index.html" style="text-decoration: none; color: var(--maincolor);">Fluorescence</a></p>
-        <button id="menubutton" onclick="openmenu()">.</button>
-    </div>
-    <div id="tabs">
-        <a href="./index.html" id="menu-home">Home</a>
-        <a href="./about.html" id="menu-about">About</a>
-        <a href="./winners.html" id="menu-winners">Winners</a>
-        <a href="./gallery.html" id="menu-gallery">Gallery</a>
-        <a href="./participate.html" id="menu-participate">Participate</a>
-        <a href="./faqs.html" id="menu-participate">FAQs</a>
-        <a href="./chat.html" id="menu-chat">Chat</a>
-        <a href="./references.html" id="menu-references">References</a>
-    </div>
-    <a href="./login.html" id="menu-login">Log In</a>
-</div>
+#title {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 150px;
+    text-shadow: 0px 0px 20px black;
+}
 
-  <button id="backtop" onclick="scrolltop()"><p id="toparrow"><</p>Top</button>
+#titleboxes {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0; 
+    right: 0;
+}
+#box, #box2 {
+    width: 400px;
+    height: 400px;
+    border: 15px solid var(--maincolor);
+    margin-top: 100px;
+    z-index: -1;
+}
+#box2 {
+    margin-top: 0px;
+}
 
-<div id="title">
-    <div id="titleboxes">
-    <p id="box"></p>
-    <p id="box2"></p>
-    </div>  
-    <image id="titleimage" src="./images/rain.jpg"></image>
-    <p id="titletext">Your Entry Has Been Submitted!</p>
-</div>
-<div id="content">
-    <a href="./index.html" id="homebutton">Return to Home</a>
-    <a href="./profile.html" id="homebutton">View Account</a>
-</div>
+#titleimage {
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 60px;
+    z-index: 5;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
 
+#titletext {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 310px;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: white;
+    font-size: 35px;
+}
 
-<div id="contact">
-  <div class="contactdetails">
-    <div class="contactdetail">
-      <p id="contactheader">Fluorescence<br>Photography<br>Competition</p>
-      <image src="./images/facebook1.png" id="social"></image>
-      <image src="./images/twitter1.png" style="margin-left: 10px;" id="social"></image>
-      <image src="./images/youtube1.png" style="margin-left: 10px;" id="social"></image>
-      <p id="copyright">Copyright © 2018 - 2022 Fluorescence</p>
+#content {
+    text-align: center;
+}
 
-    </div>
-    <div class="contactdetail">
-      <p class="contacttitle">Headquarters Location & <br>Mailing Address</p>
-      <p class="contactinfo">2657 Photo Image Center<br>Raleigh NC, 27605</p>
-    </div>
-    <div class="contactdetail">
-      <p class="contacttitle">Questions?</p>
-      <p class="contactinfo"><b>Email:</b> contact@flourescence.com<br><b>Phone:</b> 745-473-1365</p>
-    </div>
-    </div>
-  </div>
-</div>
-  <script src="universal.js"></script>
-  <script>
-window.addEventListener("load", function() {
-      if (localStorage.getItem("logged") == "Account") {
-        document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
-      }
-    });
-  </script>
-</body>
-</html>
+#homebutton {
+    margin-top: 40px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: var(--maincolor);
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+#homebutton:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 1024px) {
+    #title {
+        width: 110vw;
+    }
+    #titleimage {
+        width: 110vw;
+        height: 1000px;
+        margin-top: 0px;
+        border-radius: 60px;
+    }
+    #titletext {
+        font-size: 100px;
+        width: 110vw;
+        margin-top: 215px;
+    }
+    #content {
+        width: 110vw;
+    }
+    #homebutton {
+        font-size: 45px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+}
