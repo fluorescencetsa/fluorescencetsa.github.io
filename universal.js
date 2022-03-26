@@ -107,3 +107,13 @@ function logout() {
     location.href = "./login.html";
 }
 
+/*participate*/
+function scrollparticipate(ids){
+    ids1 = document.getElementById(ids);
+    if (window.screen.width < 1024) {
+        scrollTo({top: ids1.offsetTop - 250, behavior: "smooth"});
+    }
+    else {
+        scrollTo({top: ids1.offsetTop - 100, behavior: "smooth"});
+    }
+}
