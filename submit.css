@@ -97,7 +97,6 @@ input[type="file"] {
 #wordcount {
     font-family: "Poppins";
     font-size: 16px;
-    
     text-align: left;
     width: 700px;
     margin-top: -5px;
@@ -180,6 +179,9 @@ input[type="file"] {
     #upload {
         width: 1000px;
     }
+    #wordcount {
+        font-size: 40px;
+    }
     #statement {
         width: 1000px;
         border: 10px solid var(--maincolor);
@@ -187,7 +189,12 @@ input[type="file"] {
     #uploadbutton {
         font-size: 55px;
     }
-
+    #message {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-size:15px;
+    }
     #artiststatement {
         font-size: 40px;
     }
