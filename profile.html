@@ -84,8 +84,7 @@
       </div>
       <div id="yearsubmission">
         <p id="congrats">Congratulations! Your photo for the 2022 competition has been submitted!</p>
-        <p id="congratsinfo"> Your entry will appear here once your account details are confirmed by verifiers. 
-        </p>
+        <p id="congratsinfo"> Your entry will appear here once your account details are confirmed by verifiers within two weeks. </p>
       </div>
 
     </div>
@@ -137,7 +136,7 @@
         document.getElementById("zp").value = localStorage.getItem("zp");
 
         if (localStorage.getItem("submitted")=="true"){
-          document.getElementById("yearsubmission").style = "opacity: 1; height:200px;";
+          document.getElementById("yearsubmission").style = "opacity: 1; position: static;";
           document.getElementById("none").style = "opacity: 0; height:0px;";
           document.getElementById("upload1").style = "font-size: 0px; padding: 0;";
         }
