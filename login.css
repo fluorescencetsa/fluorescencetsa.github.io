@@ -14,7 +14,6 @@
 #left, #right {
     height: 350px;
     width: 500px;
-
 }
 #left {
     width: 400px;
@@ -110,7 +109,7 @@
         height: 1500px;
     }
     #left {
-        width: 100%;
+        width: 0;
         height: 0;
         border: none;
     }
