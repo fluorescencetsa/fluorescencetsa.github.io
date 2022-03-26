@@ -106,7 +106,7 @@
 
     #references {
         width: 101vw;
-        height: 1600px;
+        height: 2200px;
     }
     #titles {
         font-size: 55px;
@@ -115,6 +115,6 @@
         font-size: 40px;
     }
     #text {
-        font-size: 35px;
+        font-size: 45px;
     }
 }
