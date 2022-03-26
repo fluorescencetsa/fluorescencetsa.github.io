@@ -39,7 +39,15 @@
     <p id="titletext">Submissions Are <span style="color: var(--maincolor);">Open</span>!</p>
   </div>
 
-  <div class="infosection" data-aos="fade-up">
+  <div id="participatemenu">
+    <button id="scrolltheme" onclick="scrollparticipate('themesection')">Theme</button>
+    <button id="scrolltheme" onclick="scrollparticipate('datesection')">Dates</button>
+    <button id="scrolltheme" onclick="scrollparticipate('submitsection')">Submit</button>
+    <button id="scrolltheme" onclick="scrollparticipate('awardsection')">Awards</button>
+    <button id="scrolltheme" onclick="scrollparticipate('votesection')">Vote</button>
+  </div>
+
+  <div class="infosection" id="themesection" data-aos="fade-up">
     <div class="infoboxs1" data-aos="fade-up">
       <p class="infoheader" style="width: 100%; border: none; text-align: center; color: black;">The 
         Fluorescence Competition's theme for 2022 is<br><br><span data-aos="fade" data-aos-delay="300" id="theme" style="color: var(--maincolor);" >
@@ -73,7 +81,7 @@
     </div>
   </div>
 
-  <div class="infosection" style="margin-top: 100px;" data-aos="fade-right">
+  <div class="infosection" id="datesection" style="margin-top: 100px;">
     <div class="infoboxs">
       <p class="infoheader">Important Dates</p>
       <p class="infotext">
@@ -84,7 +92,8 @@
       </p>
     </div>
   </div>
-  <div class="infosection" style="margin-top: 50px;" data-aos="fade-left">
+
+  <div class="infosection" id="submitsection" style="margin-top: 50px;" >
     <div class="infoboxs">
       <p class="infoheader">Submit Photo</p>
       <p class="infotext"><b>Accepted forms of photography include:</b> A single photo, panoramic, multiple exposure, negative sandwich, or photogram.<br>
@@ -110,7 +119,7 @@
   </div>
   
   
-  <div class="infosection" style="margin-top: 50px;" data-aos="fade-right">
+  <div class="infosection" id="awardsection" style="margin-top: 50px;">
     <div class="infoboxs">
       <p class="infoheader">Awards</p>
       <p class="infotext">
@@ -125,7 +134,7 @@
 
   
 
-  <div class="infosection" style="margin-top: 50px;" data-aos="fade-left">
+  <div class="infosection" id="votesection" style="margin-top: 50px;">
     <div class="infoboxs">
       <p class="infoheader">Vote</p>
       <p class="infotext">Voting will begin on December 8th, 2022 at 12:00 AM EST after judges have nominated the 20 finalists.<br>
