@@ -179,8 +179,9 @@
     background:white;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 50px;
     user-select: none;
-    position: static;
+    position: absolute;
     border-left: 5px solid var(--maincolor);
     border-right: 5px solid var(--maincolor);
     font-family: "Poppins";
@@ -188,7 +189,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 700px;
-    height: 000px;
     padding-top: 30px;
     opacity:0;
 }
@@ -211,5 +211,60 @@
         bottom: 280px;
         height: 200px;
     }
+    #photoform {
+        width: 110vw;
+        text-align: center;
+        margin-top: 300px;
+    }
+    #titletext {
+        font-size: 60px;
+    }
+    #labeled {
+        font-size: 50px;
+    }
+    #fn, #ln, #em, #ph, #ph2, #ph3, #ma, #ci, #st, #zp, #un {
+        width: 600px;
+        height: 75px;
+        border: 4px solid var(--maincolor);
+        font-size: 40px;
+    }
+    #ph, #ph2, #ph3 {
+        width: 200px;
+    }
+    .save {
+        width: 400px;
+        font-size: 50px;
+        height: 150px;
+    }
+    #previous {
+        margin-top: 200px;
+        width: 110vw;
+    }
+    #none {
+        height: 800px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #upload1 {
+        width: 300px;
+        height: 200px;
+        font-size: 140px;
+    }
+    #noneheader {
+        font-size: 45px;
+    }
+    #noneinfo {
+        font-size: 40px;
+    }
+    #yearsubmission {
+        height: 800px;
+    }
+    #congrats {
+        font-size: 50px;
+    }
+    #congratsinfo {
+        font-size: 40px;
+    }
+    
 
 }
