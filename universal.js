@@ -21,7 +21,7 @@ setInterval(function() {
         document.getElementById("menu").style.height = "65px";
     }
 
-}, 1000);
+}, 10);
 
 /*back to top button*/
 function scrolltop(){
