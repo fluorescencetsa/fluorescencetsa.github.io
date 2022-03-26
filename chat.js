@@ -58,6 +58,14 @@ const users = [
     "misterpotatoes1",
     "Wallard Biggie",
     "RosiestTable533",
+    "bobby",
+    "TheBest!",
+    "boringcarpet2294",
+    "livingrock5401",
+    "photoman123",
+    "epicwave5770",
+    "blowingwind4510",
+    "smoothcookie5994",
 ]
 
 const userresponse = [
@@ -104,8 +112,11 @@ const userresponse = [
 "haha",
 "thats funny",
 "i just got home",
-"just ate my snack",
 "i finally finished my work",
+"oh yea i agree",
+"how long have yall participated in this competition?",
+"what kind of camera do you guys use to take pics?",
+"I use an IPhone but the camera is pretty poor honestly",
 ]
 
 function randomNumber(min, max) {
