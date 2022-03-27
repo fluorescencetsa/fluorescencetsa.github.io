@@ -14,10 +14,12 @@ function sendamessage() {
         document.getElementById("message" + messagecount).querySelector("#messageuser").innerHTML = "YOU";
         document.getElementById("message" + messagecount).querySelector("#messagemessage").innerHTML = currentmessage;
         if (screenwidth < 1024) {
-            document.getElementById("message" + messagecount).style = "height: 100px; margin-top: 0px; display: flex; align-items: center;";
+            document.getElementById("message" + messagecount).style = "height: 100px; margin-top: 0px; display: flex; align-items: start; padding: 0;";
+            document.getElementById("message" + messagecount).querySelector("#messageuser").style.color = "black";
         }
         else {
             document.getElementById("message" + messagecount).style = "height: 30px; margin-top: 0px; display: flex; align-items: center;";
+            document.getElementById("message" + messagecount).querySelector("#messageuser").style.color = "black";
         }
         document.getElementById("sendmessage").value = "";
         var elem = document.getElementById("messagebox");
@@ -33,7 +35,7 @@ document.addEventListener("keyup", function(event) {
 
 
 const users = [
-    "JohnIsHappy",
+    "JohnHappy",
     "XxNightxX",
     "eric",
     "Richardok",
@@ -45,34 +47,31 @@ const users = [
     "Fleero",
     "ItsMeHarry",
     "RoRoMcBow",
-    "GreenApples",
+    "GreenApple",
     "Anon",
     "Patrick",
     "Matthewlol",
-    "blobdoodles",
-    "TitaniumTweezer",
+    "blobdood",
     "Smith",
     "Bernard",
     "Herbert",
     "Prendick",
-    "misterpotatoes1",
-    "Wallard Biggie",
-    "RosiestTable533",
+    "mrpotato",
+    "Wallard",
+    "Rosytable",
     "bobby",
     "TheBest!",
-    "boringcarpet2294",
-    "livingrock5401",
-    "photoman123",
-    "epicwave5770",
-    "blowingwind4510",
-    "smoothcookie5994",
+    "liverock",
+    "photoman",
+    "wave",
+    "wind",
+    "cookie",
 ]
 
 const userresponse = [
 "Hello everyone!", 
 "hi", 
 "Hi! How are you?",
-"I'm looking forward to the competition.",
 "I'm so excited for this!",
 "I love this year's theme.",
 "Good luck",
@@ -83,24 +82,18 @@ const userresponse = [
 "yeah",
 "nope",
 "i dont know",
-"The weather is nice today",
+"The weather is nice",
 "Who here is hyped!!",
 "hey",
 "sup",
-"What pictures are you guys taking?",
-"do you guys have any ideas yet",
-"how did you come up with that username?",
-"What is your favorite thing to photograph??",
+"do you have ideas?",
 "no",
 "yes",
 "whats up",
 "hello",
 "um",
-"wow",
 "lol",
-"uh",
-"why",
-"I just submitted my photo!",
+"I just submitted!",
 "me too",
 "thats so cool",
 "i had a great day today",
@@ -108,15 +101,12 @@ const userresponse = [
 "facts",
 "true",
 "i agree",
-"great!",
 "haha",
-"thats funny",
 "i just got home",
-"i finally finished my work",
+"i finally finished work",
 "oh yea i agree",
-"how long have yall participated in this competition?",
-"what kind of camera do you guys use to take pics?",
-"I use an IPhone but the camera is pretty poor honestly",
+"what camera do you use?",
+"I use an IPhone for photos",
 ]
 
 function randomNumber(min, max) {
@@ -135,14 +125,14 @@ var botresponses = function() {
     document.getElementById("message" + messagecount).querySelector("#messageuser").innerHTML = users[randomuser];
     document.getElementById("message" + messagecount).querySelector("#messagemessage").innerHTML = userresponse[randommesage];
     if (screenwidth < 1024) {
-        document.getElementById("message" + messagecount).style = "height: 100px; margin-top: 0px; display: flex; align-items: center;";
+        document.getElementById("message" + messagecount).style = "height: 100px; margin-top: 0px; display: flex; align-items: start; padding: 0;";
     }
     else {
         document.getElementById("message" + messagecount).style = "height: 30px; margin-top: 0px; display: flex; align-items: center;";
     }
     var elem = document.getElementById("messagebox");
     elem.scrollTop = elem.scrollHeight;
-    setTimeout(botresponses, randomNumber(750, 4000));
+    setTimeout(botresponses, randomNumber(750, 750));
 }
 setTimeout(botresponses, randomNumber(250, 3000));
 
