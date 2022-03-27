@@ -132,7 +132,7 @@ var botresponses = function() {
     }
     var elem = document.getElementById("messagebox");
     elem.scrollTop = elem.scrollHeight;
-    setTimeout(botresponses, randomNumber(750, 750));
+    setTimeout(botresponses, randomNumber(750, 2500));
 }
 setTimeout(botresponses, randomNumber(250, 3000));
 
