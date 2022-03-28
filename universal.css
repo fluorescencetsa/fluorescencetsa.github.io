@@ -296,6 +296,7 @@ body {
         text-align: center;
         width: 105vw;
         position: absolute;
+        margin-left: 0px;
     }
     #tabs a, #menu-contact {
         display: inline-block;
