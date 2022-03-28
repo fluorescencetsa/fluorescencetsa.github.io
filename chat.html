@@ -77,10 +77,10 @@
       }, 1000);
 
       window.addEventListener("load", function() {
-      if (localStorage.getItem("logged") == "Account") {
+      if (localStorage.getItem("logged") == "My Account") {
         document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
       }
-      if (localStorage.getItem("logged") != "Account") {
+      if (localStorage.getItem("logged") != "My Account") {
         location.href = "./login.html";
       }
       var messagecount = 1;
