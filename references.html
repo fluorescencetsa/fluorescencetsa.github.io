@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fluorescence - References</title>
+    <link rel='icon' href="./images/logo.png">
+    <link rel = "stylesheet" href="universal.css">
+    <link rel = "stylesheet" href="references.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+  <div id="menu">
+    <div id="menucontent">
+        <p id="menu-name"><a href="./index.html" style="text-decoration: none; color: var(--maincolor);">Fluorescence</a></p>
+        <button id="menubutton" onclick="openmenu()">.</button>
+    </div>
+    <div id="tabs">
+        <a href="./index.html" id="menu-home">Home</a>
+        <a href="./about.html" id="menu-about">About</a>
+        <a href="./winners.html" id="menu-winners">Winners</a>
+        <a href="./gallery.html" id="menu-gallery">Gallery</a>
+        <a href="./participate.html" id="menu-participate">Participate</a>
+        <a href="./faqs.html" id="menu-participate">FAQs</a>
+        <a href="./chat.html" id="menu-chat">Chat</a>
+        <a href="./references.html" id="menu-references">References</a>
+    </div>
+    <a href="./login.html" id="menu-login">Log In</a>
+</div>
+
+  <button id="backtop" onclick="scrolltop()"><p id="toparrow"><</p>Top</button>
+
+<div id="title">
+    <div id="titleboxes">
+    <p id="box"></p>
+    <p id="box2"></p>
+    </div>  
+    <image id="titleimage" src="./images/bridge2.jpg" style="filter: brightness(120%)"></image>
+    <p id="titletext" style="text-shadow: 0px 0px 10px black">References</p>
+</div>
+
+<div id="references" data-aos="fade-up-right">
+  <p id="titles">- Student Copyright Checklist</p>
+  <a href="./references/Copyright.pdf" id="link" target="_blank">Student Copyright Checklist</a>
+  <p id="titles" style="margin-top: 50px;">- Work Log</p>
+  <a href="./references/Plan of Work.pdf" id="link" target="_blank">Meeting Work Log</a>
+  <p id="titles" style="margin-top: 50px;">- Software Libraries Used</p>
+  <a href="https://code.jquery.com/jquery-3.5.1.min.js" id="link" target="_blank">jQuery v3.5.1</a><br><br>
+  <a href="https://jquery.com/" id="link" target="_blank">jQuery Homepage</a>
+  <p id="titles" style="margin-top: 50px;">- Scroll Animations Library Used</p>
+  <a href="https://unpkg.com/aos@2.3.1/dist/aos.css" id="link" target="_blank">Animate On Scroll 3.0.0-beta.6</a><br><br>
+  <a href="https://github.com/michalsnik/aos" id="link" target="_blank">michalsnik's AOS Github Page</a>
+  
+  <p id="titles" style="margin-top: 50px;">- Facebook Icon</p>
+  <a href="https://www.facebook.com/brand/resources/facebookapp/logo" id="link" target="_blank">Facebook</a>
+
+  <p id="titles" style="margin-top: 50px;">- Twitter Icon</p>
+  <a href="https://about.twitter.com/en/who-we-are/brand-toolkit" id="link" target="_blank">Twitter</a>
+
+  <p id="titles" style="margin-top: 50px;">- Youtube Icon</p>
+  <a href="https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors" id="link" target="_blank">Youtube</a>
+  
+  <p id="text">All photographs featured on this website were taken by the creators of this website.</p>
+</div>
+
+
+<div id="contact">
+  <div class="contactdetails">
+    <div class="contactdetail">
+      <p id="contactheader">Fluorescence<br>Photography<br>Competition</p>
+      <image src="./images/facebook1.png" id="social"></image>
+      <image src="./images/twitter1.png" style="margin-left: 10px;" id="social"></image>
+      <image src="./images/youtube1.png" style="margin-left: 10px;" id="social"></image>
+      <p id="copyright">Copyright © 2018 - 2022 Fluorescence</p>
+
+    </div>
+    <div class="contactdetail">
+      <p class="contacttitle">Headquarters Location & <br>Mailing Address</p>
+      <p class="contactinfo">2657 Photo Image Center<br>Raleigh NC, 27605</p>
+    </div>
+    <div class="contactdetail">
+      <p class="contacttitle">Questions?</p>
+      <p class="contactinfo"><b>Email:</b> contact@flourescence.com<br><b>Phone:</b> 745-473-1365</p>
+    </div>
+    </div>
+  </div>
+</div>
+  <script src="universal.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init()
+      setInterval(function() {
+        if (window.screen.width < 1024) { AOS.init({disable: true});}
+      }, 1000);
+      window.addEventListener("load", function() {
+      if (localStorage.getItem("logged") == "My Account") {
+        document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
+      }
+    });
+  </script>
+</body>
+</html>
