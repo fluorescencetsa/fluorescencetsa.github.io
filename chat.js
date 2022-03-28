@@ -33,7 +33,6 @@ document.addEventListener("keyup", function(event) {
     }
 });
 
-
 const users = [
     "JohnHappy",
     "XxNightxX",
