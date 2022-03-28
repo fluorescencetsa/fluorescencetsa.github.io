@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fluorescence - Previous Winners</title>
+    <link rel='icon' href="./images/logo.png">
+    <link rel = "stylesheet" href="universal.css">
+    <link rel = "stylesheet" href="winners.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  </head>
+<body>
+  <div id="menu">
+    <div id="menucontent">
+        <p id="menu-name"><a href="./index.html" style="text-decoration: none; color: var(--maincolor);">Fluorescence</a></p>
+        <button id="menubutton" onclick="openmenu()">.</button>
+    </div>
+    <div id="tabs">
+        <a href="./index.html" id="menu-home">Home</a>
+        <a href="./about.html" id="menu-about">About</a>
+        <a href="./winners.html" id="menu-winners">Winners</a>
+        <a href="./gallery.html" id="menu-gallery">Gallery</a>
+        <a href="./participate.html" id="menu-participate">Participate</a>
+        <a href="./faqs.html" id="menu-participate">FAQs</a>
+        <a href="./chat.html" id="menu-chat">Chat</a>
+        <a href="./references.html" id="menu-references">References</a>
+    </div>
+    <a href="./login.html" id="menu-login">Log In</a>
+</div>
+
+  <button id="backtop" onclick="scrolltop()"><p id="toparrow"><</p>Top</button>
+
+  <div class="winner">
+      <p class="winnertitle"><span id="yellowtext">2018</span> - Environmental Awareness</p>
+      <p class="winnerinfo" data-aos="fade-up">"The Bigger Picture"</p>
+      <image class="winnerimage" src="./images/droplet.jpg" data-aos="fade-up-left"></image>
+      <p class="yellowline2"></p>
+      <p class="winnername">Richard Lin<br><span style="font-size: 16px; font-weight: normal;">
+        "For this year's theme, my goal was to take a picture that reflected the true beauty and 
+        uniqueness of nature: I was able to perfectly encapsulate this through a close up of a bubble 
+        on a leaf but with a deeper picture within."</span></p>
+  </div>
+  <div class="winner">
+    <p class="winnertitle"><span id="yellowtext">2019</span> - Education and Learning</p>
+    <p class="winnerinfo" data-aos="fade-up">"Mirrored Library"</p>
+    <image class="winnerimage" src="./images/books.jpg" data-aos="fade-up-right"></image>
+    <p class="yellowline2"></p>
+    <p class="winnername">Jerry Lin<br><span style="font-size: 16px; font-weight: normal;">
+      "Knowledge is all around us, but it is impossible to understand its depth if we do not put in the
+       time to learn it. With this photo, I hope to illustrate the value of hard work in education."</span></p>
+</div>
+<div class="winner">
+    <p class="winnertitle"><span id="yellowtext">2020</span> - Health and Wellbeing</p>
+    <p class="winnerinfo" data-aos="fade-up">"Mask"</p>
+    <image class="winnerimage" src="./images/mask.jpg" data-aos="fade-up-left"></image>
+    <p class="yellowline2"></p>
+    <p class="winnername">Joshua Cai<br><span style="font-size: 16px; font-weight: normal;">
+      "I wanted the simplicity of this picture to represent how an individual can do small things to
+       benefit themselves and those around them. When we work together to protect each other, the small 
+       things we do create a stronger and healthier community."</span></p>
+</div>
+<div class="winner">
+    <p class="winnertitle"><span id="yellowtext">2021</span> - Cultural Awareness</p>
+    <p class="winnerinfo" data-aos="fade-up">"Christmas Day"</p>
+    <image class="winnerimage" src="./images/ornament.jpg" data-aos="fade-up-right"></image>
+    <p class="yellowline2"></p>
+    <p class="winnername">Harvyn Lim<br><span style="font-size: 16px; font-weight: normal;">
+      "While the overall picture showcases a Christmas tradition, each ornament tells its own separate 
+      story. Even within a single holiday, people celebrate in different ways based on their own 
+      experiences and traditions."</span></p>
+</div>
+  
+
+<div id="contact">
+  <div class="contactdetails">
+    <div class="contactdetail">
+      <p id="contactheader">Fluorescence<br>Photography<br>Competition</p>
+      <image src="./images/facebook1.png" id="social"></image>
+      <image src="./images/twitter1.png" style="margin-left: 10px;" id="social"></image>
+      <image src="./images/youtube1.png" style="margin-left: 10px;" id="social"></image>
+      <p id="copyright">Copyright © 2018 - 2022 Fluorescence</p>
+
+    </div>
+    <div class="contactdetail">
+      <p class="contacttitle">Headquarters Location & <br>Mailing Address</p>
+      <p class="contactinfo">2657 Photo Image Center<br>Raleigh NC, 27605</p>
+    </div>
+    <div class="contactdetail">
+      <p class="contacttitle">Questions?</p>
+      <p class="contactinfo"><b>Email:</b> contact@flourescence.com<br><b>Phone:</b> 745-473-1365</p>
+    </div>
+    </div>
+  </div>
+</div>
+<script src="universal.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init()
+  setInterval(function() {
+    if (window.screen.width < 1024) { AOS.init({disable: true});}
+  }, 1000);
+  window.addEventListener("load", function() {
+      if (localStorage.getItem("logged") == "My Account") {
+        document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
+      }
+    });
+</script>
+</body>
+</html>
