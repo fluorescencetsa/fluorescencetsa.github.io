@@ -78,16 +78,17 @@
     <script src="universal.js"></script>
     <script>
       window.addEventListener("load", function() {
-      if (localStorage.getItem("logged") == "Account") {
+      if (localStorage.getItem("logged") == "My Account") {
         document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
       }
       if (localStorage.getItem("submitted") == "true") {
         location.href = "./submitted.html";
       }
-      if (localStorage.getItem("logged") != "Account") {
+      if (localStorage.getItem("logged") != "My Account") {
         location.href = "./login.html";
       }
     });
+
     document.getElementById("statement").maxLength = "250";
     setInterval(() => {
       let artiststatement = document.getElementById("statement").value;
