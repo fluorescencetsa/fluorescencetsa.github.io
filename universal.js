@@ -59,7 +59,7 @@ $('.question4').on('click', function() {
 /*login*/
 function login() {
     if (document.getElementById("username").value == "John" && document.getElementById("pass").value == "12345") {
-        localStorage.setItem("logged", "Account");
+        localStorage.setItem("logged", "My Account");
         location.href = "./index.html";
     }
     else {
