@@ -260,6 +260,9 @@ body {
     transform: scale(1.2);
     cursor: pointer;
 }
+#tabs {
+    margin-left: -50px;
+}
 
 
 @media only screen and (max-width: 1024px) {
