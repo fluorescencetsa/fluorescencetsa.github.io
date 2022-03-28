@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fluorescence - My Account</title>
+    <link rel='icon' href="./images/logo.png">
+    <link rel = "stylesheet" href="universal.css">
+    <link rel = "stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <div id="menu">
+        <div id="menucontent">
+            <p id="menu-name"><a href="./index.html" style="text-decoration: none; color: var(--maincolor);">Fluorescence</a></p>
+            <button id="menubutton" onclick="openmenu()">.</button>
+        </div>
+        <div id="tabs">
+            <a href="./index.html" id="menu-home">Home</a>
+            <a href="./about.html" id="menu-about">About</a>
+            <a href="./winners.html" id="menu-winners">Winners</a>
+            <a href="./gallery.html" id="menu-gallery">Gallery</a>
+            <a href="./participate.html" id="menu-participate">Participate</a>
+            <a href="./faqs.html" id="menu-participate">FAQs</a>
+            <a href="./chat.html" id="menu-chat">Chat</a>
+            <a href="./references.html" id="menu-references">References</a>
+        </div>
+        <a href="./login.html" id="menu-login">Log In</a>
+    </div>
+
+  <button id="backtop" onclick="scrolltop()"><p id="toparrow"><</p>Top</button>
+  <button class="logout" onclick="logout()">Log Out</button>
+
+  <div id="photoform">
+      <p id="titletext" style="margin-top: 150px">Your Profile</p>
+      <p id="message1">This username will be displayed to others in the chat.</p>
+      <label id="labeled">Username: </label>
+      <input type="text" id="un"><br>
+
+      <p id="titletext">Your Account</p>
+      <p id="message1">All information is required to participate in the competition.</p>
+      <label id="labeled">First Name: </label>
+      <input type="text" id="fn"><br>
+
+      <label id="labeled">Last Name: </label>
+      <input type="text" id="ln"><br>
+
+      <label id="labeled">Email: </label>
+      <input type="text" id="em"><br>
+      
+      <label id="labeled">Phone: </label>
+      <input type="text" id="ph" maxlength=3><label id="dash">-</label>
+      <input type="text" id="ph2" maxlength=3><label id="dash">-</label>
+      <input type="text" id="ph3" maxlength=4><br>
+      
+      <p id="titletext">Mailing Address</p>
+
+      <label id="labeled">Street Address: </label>
+      <input type="text" id="ma"><br>
+      
+      <label id="labeled">City: </label>
+      <input type="text" id="ci"><br>
+
+      <label id="labeled">State (Abbrev.): </label>
+      <input type="text" id="st" style="text-transform:uppercase" maxlength=2><br>
+      
+      <label id="labeled">ZIP Code:</label>
+      <input type="text" id="zp" maxlength=5>
+
+      <p id="error">One or more fields are blank.</p>
+      <p id="message">Information Updated!</p>
+      <div id="buttonsec">
+        <button class="save" onclick="save()">Save</button><br>
+        <button class="logout" onclick="logout()">Log Out</button>
+      </div>
+    </div>
+
+    <div id="previous">
+      <p id="titletext">Your Previous Submissions</p>
+
+      <div id="none">
+        <a href="./submit.html" id="upload1" data-aos="fade-up">+</a>
+        <p id="noneheader">You have not submitted any photos in previous years.</p>
+        <p id="noneinfo">Click the button to upload a submission for the 2022 competition.</p>
+      </div>
+      <div id="yearsubmission">
+        <p id="congrats">Congratulations! Your photo for the 2022 competition has been submitted!</p>
+        <p id="congratsinfo"> Your entry will appear here once your account details are confirmed by verifiers within two weeks. </p>
+      </div>
+
+    </div>
+
+
+<div id="contact">
+  <div class="contactdetails">
+    <div class="contactdetail">
+      <p id="contactheader">Fluorescence<br>Photography<br>Competition</p>
+      <image src="./images/facebook1.png" id="social"></image>
+      <image src="./images/twitter1.png" style="margin-left: 10px;" id="social"></image>
+      <image src="./images/youtube1.png" style="margin-left: 10px;" id="social"></image>
+      <p id="copyright">Copyright © 2018 - 2022 Fluorescence</p>
+
+    </div>
+    <div class="contactdetail">
+      <p class="contacttitle">Headquarters Location & <br>Mailing Address</p>
+      <p class="contactinfo">2657 Photo Image Center<br>Raleigh NC, 27605</p>
+    </div>
+    <div class="contactdetail">
+      <p class="contacttitle">Questions?</p>
+      <p class="contactinfo"><b>Email:</b> contact@flourescence.com<br><b>Phone:</b> 745-473-1365</p>
+    </div>
+    </div>
+  </div>
+</div>
+  <script src="universal.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init()
+      setInterval(function() {
+        if (window.screen.width < 1024) { AOS.init({disable: true});}
+      }, 1000);
+
+      window.addEventListener("load", function() {
+        if (localStorage.getItem("logged") == "My Account") {
+          document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
+        }
+        document.getElementById("un").value = localStorage.getItem("un");
+        document.getElementById("fn").value = localStorage.getItem("fn");
+        document.getElementById("ln").value = localStorage.getItem("ln");
+        document.getElementById("em").value = localStorage.getItem("em");
+        document.getElementById("ph").value = localStorage.getItem("ph");
+        document.getElementById("ph2").value = localStorage.getItem("ph2");
+        document.getElementById("ph3").value = localStorage.getItem("ph3");
+        document.getElementById("ma").value = localStorage.getItem("ma");
+        document.getElementById("ci").value = localStorage.getItem("ci");
+        document.getElementById("st").value = localStorage.getItem("st");
+        document.getElementById("zp").value = localStorage.getItem("zp");
+
+        if (localStorage.getItem("submitted")=="true"){
+          document.getElementById("yearsubmission").style = "opacity: 1; position: static;";
+          document.getElementById("none").style = "opacity: 0; height:0px;";
+          document.getElementById("upload1").style = "font-size: 0px; padding: 0;";
+        }
+      });
+  </script>
+</body>
+</html>

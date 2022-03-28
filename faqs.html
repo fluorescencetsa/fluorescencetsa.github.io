@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fluorescence - FAQs</title>
+    <link rel='icon' href="./images/logo.png">
+    <link rel = "stylesheet" href="universal.css">
+    <link rel = "stylesheet" href="faqs.css">
+</head>
+<body>
+  <div id="menu">
+    <div id="menucontent">
+        <p id="menu-name"><a href="./index.html" style="text-decoration: none; color: var(--maincolor);">Fluorescence</a></p>
+        <button id="menubutton" onclick="openmenu()">.</button>
+    </div>
+    <div id="tabs">
+        <a href="./index.html" id="menu-home">Home</a>
+        <a href="./about.html" id="menu-about">About</a>
+        <a href="./winners.html" id="menu-winners">Winners</a>
+        <a href="./gallery.html" id="menu-gallery">Gallery</a>
+        <a href="./participate.html" id="menu-participate">Participate</a>
+        <a href="./faqs.html" style="border-bottom: 2px solid var(--maincolor);
+        background-color: #fff1c6;" id="menu-participate">FAQs</a>
+        <a href="./chat.html" id="menu-chat">Chat</a>
+        <a href="./references.html" id="menu-references">References</a>
+    </div>
+    <a href="./login.html" id="menu-login">Log In</a>
+</div>
+
+  <button id="backtop" onclick="scrolltop()"><p id="toparrow"><</p>Top</button>
+
+<div id="title">
+    <div id="titleboxes">
+    <p id="box"></p>
+    <p id="box2"></p>
+    </div>  
+    <image id="titleimage" src="./images/tulip.png"></image>
+    <p id="titletext" style="text-shadow: 0px 0px 10px black; ">Frequently Asked Questions</p>
+</div>
+
+<div id="faqsection">
+    <div class="faq">
+        <button class="question" style="text-align: left;">Is there an age requirement or limit?<p class="arrow">></p></button>
+        <p class="answer">Yes - Participants must be at least 18 years old by the submission due date to submit an entry.<br>
+        </p>
+    </div>
+    <div class="faq">
+      <button class="question1" >How do I receive my award if I win?<p class="arrow1">></p></button>
+      <p class="answer1">We will ship the enclosed medal, certificate, and cash prize to you within two weeks of December 15th, 2022. 
+        If you do not receive your award after two weeks, please contact us at contact@fluorescence.com. <br>
+      </p>
+  </div>
+  <div class="faq">
+    <button class="question2">Can I vote for other photos if I am a participant?<p class="arrow2">></p></button>
+    <p class="answer2">We highly recommend all participants to take part in the voting process, as appreciating others' work is one of our core values.<br>
+    </p>
+</div>
+<div class="faq">
+  <button class="question3">Can I submit photos that were not photographed by me?<p class="arrow3">></p></button>
+  <p class="answer3">Participants can only submit a photo taken by themself. 
+    Any individual violating this rule will be disqualified from the competition and may be blacklisted from future competitions.<br>
+  </p>
+</div>
+<div class="faq">
+  <button class="question4">Why was the competition moved online and when will it be back in-person?<p class="arrow4">></p></button>
+  <p class="answer4">In early 2020, the Covid-19 pandemic reached the US. In order to maintain health 
+    and safety standards, we decided to hold our competition, voting, and awards ceremony virtually instead 
+    of in-person. We plan to move our events back on-site when we determine that it is safe to do so.<br>
+  </p>
+</div>
+</div>
+
+<div id="contact">
+  <div class="contactdetails">
+    <div class="contactdetail">
+      <p id="contactheader">Fluorescence<br>Photography<br>Competition</p>
+      <image src="./images/facebook1.png" id="social"></image>
+      <image src="./images/twitter1.png" style="margin-left: 10px;" id="social"></image>
+      <image src="./images/youtube1.png" style="margin-left: 10px;" id="social"></image>
+      <p id="copyright">Copyright © 2018 - 2022 Fluorescence</p>
+    </div>
+    <div class="contactdetail">
+      <p class="contacttitle">Headquarters Location & <br>Mailing Address</p>
+      <p class="contactinfo">2657 Photo Image Center<br>Raleigh NC, 27605</p>
+    </div>
+    <div class="contactdetail">
+      <p class="contacttitle">Questions?</p>
+      <p class="contactinfo"><b>Email:</b> contact@flourescence.com<br><b>Phone:</b> 745-473-1365</p>
+    </div>
+    </div>
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="universal.js"></script>
+  <script >
+window.addEventListener("load", function() {
+      if (localStorage.getItem("logged") == "My Account") {
+        document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
+      }
+    });
+  </script>
+</body>
+</html>
