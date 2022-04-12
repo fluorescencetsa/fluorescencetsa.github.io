@@ -15,11 +15,11 @@ function sendamessage() {
         document.getElementById("message" + messagecount).querySelector("#messagemessage").innerHTML = currentmessage;
         if (screenwidth < 1024) {
             document.getElementById("message" + messagecount).style = "height: 100px; margin-top: 0px; display: flex; align-items: start; padding: 0;";
-            document.getElementById("message" + messagecount).querySelector("#messageuser").style.color = "#4a86e8";
+            document.getElementById("message" + messagecount).querySelector("#messageuser").style.color = "var(--third)";
         }
         else {
             document.getElementById("message" + messagecount).style = "height: 30px; margin-top: 0px; display: flex; align-items: center;";
-            document.getElementById("message" + messagecount).querySelector("#messageuser").style.color = "#4a86e8";
+            document.getElementById("message" + messagecount).querySelector("#messageuser").style.color = "var(--third)";
         }
         document.getElementById("sendmessage").value = "";
         var elem = document.getElementById("messagebox");

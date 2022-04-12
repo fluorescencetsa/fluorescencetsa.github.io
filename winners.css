@@ -1,6 +1,6 @@
 #menu-winners {
     border-bottom: 2px solid var(--maincolor);
-    background-color: #fff1c6;
+    background: #fffab5;
 }
 
 .winner {
@@ -14,7 +14,7 @@
 }
 
 #yellowtext {
-    color: var(--maincolor);
+    color: var(--third);
 }
 
 .winnerinfo {

@@ -3,7 +3,11 @@
 
 
 :root {
-    --maincolor: #f1c232;
+    --maincolor: rgb(0, 52, 163);
+    --second: rgb(121, 174, 255);
+    --third: #f0c400;
+    --fourth: rgb(228, 239, 255);
+    --fifth: #ffe75f;
 }
 
 body {
@@ -72,7 +76,7 @@ body {
     margin-left: auto;
     margin-right: 70px;
     color: white;
-    background: var(--maincolor);
+    background: var(--second);
     border-radius: 10px;
 }
 #menu-login:hover {
@@ -82,7 +86,7 @@ body {
 
 #menu-home:hover, #menu-about:hover, #menu-winners:hover, #menu-gallery:hover, #menu-participate:hover, #menu-references:hover, #menu-chat:hover{
     border-bottom: 2px solid var(--maincolor);
-    background-color: #fff1c6;
+    background: #fffab5;
 }
 
 #menu-home {
@@ -156,7 +160,7 @@ body {
     font-size: 25px;
     font-weight: 700;
     color: var(--maincolor);
-    border-bottom: 4px solid var(--maincolor);
+    border-bottom: 4px solid var(--third);
     width: 250px;
     padding-bottom: 10px;
 }
@@ -169,6 +173,7 @@ body {
     background: var(--maincolor);
     color: var(--maincolor);
     height: 15px;
+    z-index: -1;
 }
 
 .infotext {
@@ -184,6 +189,7 @@ body {
     object-fit: cover;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
     transition: 0.2s;
+    z-index: -1;
 }
 .infoimage:hover {
     transform: scale(1.15);
@@ -207,8 +213,8 @@ body {
     width: 100%;
     height: 400px; 
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
-    background: white;
-    border-top: 4px solid var(--maincolor);
+    background: #0a2a66;
+    border-top: 4px solid var(--second);
     display: flex;
     justify-content: center;
 }
@@ -216,14 +222,14 @@ body {
     font-family: "Poppins";
     font-size: 30px;
     font-weight: 700;
-    color: var(--maincolor);
+    color: var(--fourth);
     text-align: left;
 }
 #copyright {
     font-family: "Poppins";
     font-size: 17px;
     font-weight: 700;
-    color: var(--maincolor);
+    color: var(--fifth);
     text-align: left;
 }
 
@@ -240,13 +246,14 @@ body {
     font-family: "Poppins";
     font-size: 23px;
     font-weight: 700;
-    color: var(--maincolor);
+    color: var(--fourth);
     text-align: left;
 }
 .contactinfo {
     font-size: 17px;
     font-family: "Montserrat";
     line-height: 30px;
+    color: white;
 }
 .contactdetail {
     width: 400px;

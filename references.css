@@ -1,6 +1,6 @@
 #menu-references {
     border-bottom: 2px solid var(--maincolor);
-    background-color: #fff1c6;
+    background: #fffab5;
 }
 
 #title {
@@ -19,7 +19,7 @@
 #box, #box2 {
     width: 400px;
     height: 400px;
-    border: 15px solid var(--maincolor);
+    border: 15px solid var(--second);
     margin-top: 100px;
     z-index: -1;
 }
@@ -63,7 +63,7 @@
 #titles {
     font-size: 20px;
     font-family: "Poppins";
-    color: var(--maincolor);
+    color: var(--third);
     font-weight: 700;
     padding-bottom: 5px;
 }

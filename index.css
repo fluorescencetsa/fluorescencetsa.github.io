@@ -1,6 +1,6 @@
 #menu-home {
     border-bottom: 2px solid var(--maincolor);
-    background-color: #fff1c6;
+    background: #fffab5;
 }
 
 #title {
@@ -24,7 +24,7 @@
 #titlename {
     font-family: "Poppins"; 
     font-size: 45px;
-    color: rgb(255, 205, 96);
+    color: var(--fifth);
     font-weight: 800;
     position: absolute;
     text-shadow: 0px 0px 20px black;

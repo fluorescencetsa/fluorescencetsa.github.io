@@ -55,7 +55,7 @@
 #username, #pass {
     margin-top: 20px;
     margin-left: 10px;
-    border: 3px solid var(--maincolor);
+    border: 3px solid var(--second);
     width: 200px;
     height: 20px;
     outline: none;
@@ -74,7 +74,7 @@
 }
 .login {
     margin-top: 0px;
-    background: var(--maincolor);
+    background: var(--third);
     width: 120px;
     height: 50px;
     outline: none;
@@ -99,6 +99,13 @@
     font-family: "Poppins";
     color: black;
     font-weight: 600;
+}
+#copyright1 {
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--third);
 }
 
 @media only screen and (max-width: 1024px) {
