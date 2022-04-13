@@ -42,13 +42,17 @@
         the growing visual arts community while bringing awareness to the social issues we face.</p>
       <a href="./about.html" class="infolink">View history</a>
     </div>
-    <div class="yellowline" data-aos="fade-right" data-aos-delay="300">.</div>
-    <image class="infoimage" src="./images/balloons.jpg" style="filter: brightness(110%)" data-aos="fade-right" data-aos-delay="300"></image>
+    <div class="infofader" data-aos="fade-right" data-aos-delay="300">
+      <div class="yellowline">.</div>
+      <image class="infoimage" src="./images/balloons.jpg" style="filter: brightness(110%)"></image>
+    </div>
   </div>
 
   <div class="infosection">
-    <image class="infoimage" src="./images/leaf.jpg" data-aos="fade-left" data-aos-delay="300"></image>
-    <div class="yellowline" data-aos="fade-left" data-aos-delay="300">.</div>
+    <div class="infofader" data-aos="fade-left" data-aos-delay="300">
+      <image class="infoimage" src="./images/leaf.jpg"></image>
+      <div class="yellowline">.</div>
+    </div>
     <div class="infobox" data-aos="fade-left">
       <p class="infoheader">Previous Winners</p>
       <p class="infotext">Click below to view the winners and their statements from previous years! These were the top 
@@ -67,13 +71,17 @@
         the best submissions from previous years.</p>
       <a href="./gallery.html" class="infolink">View gallery</a>
     </div>
-    <div class="yellowline" data-aos="fade-right" data-aos-delay="300">.</div>
-    <image class="infoimage" src="./images/ocean.jpg" data-aos="fade-right" data-aos-delay="300"></image>
+    <div class="infofader" data-aos="fade-right" data-aos-delay="300">
+      <div class="yellowline">.</div>
+      <image class="infoimage" src="./images/ocean.jpg" style="filter: brightness(110%)"></image>
+    </div>
   </div>
 
   <div class="infosection">
-    <image class="infoimage" src="./images/beach.jpg" data-aos="fade-left" data-aos-delay="300"></image>
-    <div class="yellowline" data-aos="fade-left" data-aos-delay="300">.</div>
+    <div class="infofader" data-aos="fade-left" data-aos-delay="300">
+      <image class="infoimage" src="./images/beach.jpg"></image>
+      <div class="yellowline">.</div>
+    </div>
     <div class="infobox">
       <p class="infoheader">Participate</p>
       <p class="infotext" data-aos="fade-left">You can participate too! Every year we have a theme for your photos. This year, 
@@ -93,8 +101,10 @@
          to the COVID-19 pandemic, we are not able to meet in-person as easily as before.</p>
       <a href="./chat.html" class="infolink">Start chatting</a>
     </div>
-    <div class="yellowline" data-aos="fade-right" data-aos-delay="300">.</div>
-    <image class="infoimage" src="./images/yogurt.jpg" data-aos="fade-right" data-aos-delay="300"></image>
+    <div class="infofader" data-aos="fade-right" data-aos-delay="300">
+      <div class="yellowline">.</div>
+      <image class="infoimage" src="./images/yogurt.jpg" style="filter: brightness(110%)"></image>
+    </div>
   </div>
 
   <div id="sponsors" data-aos="fade-up">
@@ -105,6 +115,19 @@
       <image src="./images/peoples.png" id="sponsorimage"></image>
       <image src="./images/cubecameras.png" id="sponsorimage"></image>
     </div>
+  </div>
+
+  <div id="newsletter" data-aos="fade-up">
+    <p id="sponsorsheader">Subscribe to Our Newsletter</p>
+    <p id="sponsortext">Sign up for our newsletter to receive the latest updates and news.</p>
+    <input type="text" id="newsletterinput" placeholder="Enter your email" ><br>
+    <p id="error">Please enter a valid email.</p>
+    <button id="subscribe" onclick="subscribe()">Join Now</button>
+  </div>
+
+  <div id="newssuccess" data-aos="fade-up">
+    <p id="newssuccesstext">Thank you for joining our newsletter!</p>
+    <button id="unsubscribe" onclick="unsubscribe()">Unsubscribe</button>
   </div>
 
   <div id="contact">
@@ -135,11 +158,37 @@
     setInterval(function() {
       if (window.screen.width < 1024) { AOS.init({disable: true});}
     }, 1000);
+    if (localStorage.getItem("subbed") == "true") {
+      document.getElementById("newsletter").style="display: none";
+      document.getElementById("newssuccess").style="display: block";
+      }
+    if (localStorage.getItem("subbed") == "false") {
+      document.getElementById("newssuccess").style="display: none";
+        document.getElementById("newsletter").style="display: block";
+    }
     window.addEventListener("load", function() {
       if (localStorage.getItem("logged") == "My Account") {
         document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
       }
     });
+    function subscribe() {
+      if (document.getElementById("newsletterinput").value.indexOf('@') > -1) {
+          document.getElementById("newsletter").style="display: none";
+          document.getElementById("newssuccess").style="display: block";
+          localStorage.setItem("subbed", "true");
+          console.log(localStorage.getItem("subbed"));
+      }
+      else {
+          document.getElementById("error").style = "font-size: 14px";
+          document.getElementById("subscribe").style="margin-top: 0px";
+      }
+    }
+    function unsubscribe() {
+        document.getElementById("newssuccess").style="display: none";
+        document.getElementById("newsletter").style="display: block";
+        localStorage.setItem("subbed", "false");
+        console.log(localStorage.getItem("subbed"));
+    }
   </script>
 </body>
 </html>

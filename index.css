@@ -73,6 +73,75 @@
     width: 200px;
 }
 
+#newsletter {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 350px;
+    padding-top: 100px;
+    display: block;
+}
+#newssuccess {
+    margin-top: 100px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 200px;
+    padding-top: 70px;
+    display: block;
+    background: white;
+    border-left: 3px solid var(--third);
+    border-right: 3px solid var(--third);
+    display: none;
+}
+#newssuccesstext {
+    font-size: 25px;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: var(--third)
+}
+
+#newsletterinput {
+    width: 500px;
+    height: 30px;
+    margin-top: 20px;
+    outline: none;
+    border: 3px solid var(--third);
+    font-size: 16px;
+    font-family: "Montserrat";
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#subscribe, #unsubscribe {
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    border: none;
+    background: var(--maincolor);
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+#unsubscribe {
+    margin-top: 0px;
+}
+#subscribe:hover, #unsubscribe:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+#error {
+    font-family: "Poppins";
+    font-size: 0px;
+    color: red;
+    user-select: none;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1024px) {
     #title {
         width: 108vw;
