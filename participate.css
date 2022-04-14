@@ -96,11 +96,15 @@
     border-radius: 0px;
 }
 #countdown {
+    margin-top: 50px;
     font-family: "Poppins";
     font-size: 30px;
-    color: var(--second);
+    color: var(--maincolor);
     font-weight: 700;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #countdowninfo {
     font-family: "Poppins";
@@ -108,6 +112,20 @@
     color: black;
     font-size: 20px;
     text-align: center;
+}
+
+#timesection {
+    border-left: 3px solid var(--fourth);
+    border-right: 3px solid var(--fourth);
+    width: 150px;
+    margin-left: -3px;
+}
+
+#word {
+    font-size: 20px;
+    margin-top: -5px;
+    font-weight: 600;
+    color: var(--second);
 }
 
 #buttons {
@@ -140,6 +158,60 @@
 #theme {
     font-size: 45px;
 }
+
+.dates {
+    width: 1000px;
+    text-align: center;
+}
+.dateheader {
+    font-family: "Poppins";
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--maincolor);
+    border-bottom: 4px solid var(--third);
+    width: 250px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dateboxes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#datebox {
+    width: 150px;
+    background: white;
+    height: 300px;
+    margin-left: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+#adate {
+    background: var(--second);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 120px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 700;
+}
+#adateinfo {
+    font-family: "Montserrat";
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 @media only screen and (max-width: 1024px) {
     #title {

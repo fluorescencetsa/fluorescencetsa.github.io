@@ -54,7 +54,7 @@
           SOCIAL JUSTICE</span>
           <p id="countdowninfo">Submit Photos By December 1st, 2022 at 11:59 PM EST</p>
           <script>
-            var date = new Date('12/1/2022 10:59 PM');
+            var date = new Date('12/1/2022 11:59 PM');
         
             var _second = 1000;
             var _minute = _second * 60;
@@ -70,30 +70,59 @@
                 var minutes = Math.floor((distance % _hour) / _minute);
                 var seconds = Math.floor((distance % _minute) / _second);
         
-                document.getElementById('countdown').innerHTML = days + " Days, ";
-                document.getElementById('countdown').innerHTML += hours + " Hours, ";
-                document.getElementById('countdown').innerHTML += minutes + " Minutes, ";
-                document.getElementById('countdown').innerHTML += seconds + " Seconds";
+                document.getElementById('days').innerHTML = days;
+                document.getElementById('hours').innerHTML = hours;
+                document.getElementById('minutes').innerHTML = minutes;
+                document.getElementById('seconds').innerHTML = seconds;
             }
             timer = setInterval(showRemaining, 1000);
           </script>
-          <div id="countdown" data-aos="fade-up"></div>
+          <div id="countdown" data-aos="fade-up">
+            <div id="timesection">
+              <div id="days">-</div>
+              <p id="word">Days</p>
+            </div>
+            <div id="timesection">
+              <div id="hours">-</div>
+              <p id="word">Hours</p>
+            </div>
+            <div id="timesection">
+              <div id="minutes">-</div>
+              <p id="word">Minutes</p>
+            </div>
+            <div id="timesection">
+              <div id="seconds">-</div>
+              <p id="word">Seconds</p>
+            </div>
+          </div>
     </div>
   </div>
 
-  <div class="infosection" id="datesection" style="margin-top: 100px;">
-    <div class="infoboxs">
-      <p class="infoheader">Important Dates</p>
-      <p class="infotext">
-        <b>December 1st, 2022 at 11:59 PM EST: </b>Photo submission window closes and judges begin selecting the 20 finalists.<br>
-        <b>December 8th, 2022 at 12:00 AM EST: </b>Judges finish choosing 20 finalists and the voting window opens. <br>
-        <b>December 14th, 2022 at 11:59 PM EST: </b>The voting window closes and an award ceremony presentation is prepared.<br>
-        <b>December 15th, 2022 at 2:00 PM EST: </b>An award ceremony is held online and the winners are presented.
-      </p>
+  <div class="infosection" id="datesection" style="margin-top: 50px;">
+    <div class="dates">
+      <p class="dateheader">Important Dates</p>
+      <div id="dateboxes">
+        <div id="datebox" style="margin-left: 0px;">
+          <div id="adate">1st<br>Dec</div>
+          <p id="adateinfo"><b>11:59 PM EST:</b> Photo submission window closes and judges begin selecting the 20 finalists.</p>
+        </div>
+        <div id="datebox">
+          <div id="adate">8th<br>Dec</div>
+          <p id="adateinfo"><b>12:00 AM EST:</b> Judges finish choosing 20 finalists and the voting window opens. </p>
+        </div>
+        <div id="datebox">
+          <div id="adate">14th<br>Dec</div>
+          <p id="adateinfo"><b>11:59 PM EST:</b><br> The voting window closes and an award ceremony presentation is prepared.</p>
+        </div>
+        <div id="datebox">
+          <div id="adate">15th<br>Dec</div>
+          <p id="adateinfo"><b>2:00 PM EST: </b><br>An award ceremony is held online and the winners are presented.</p>
+        </div>
+      </div>
     </div>
   </div>
     
-  <div class="infosection" id="awardsection" style="margin-top: 50px;">
+  <div class="infosection" id="awardsection" style="margin-top: 100px;">
     <div class="infoboxs">
       <p class="infoheader">Awards</p>
       <p class="infotext">
