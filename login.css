@@ -19,7 +19,7 @@
     width: 400px;
     padding-left: 100px;
     padding-top: 50px;
-    border-right: 3px solid var(--maincolor);
+    border-right: 3px solid var(--fourth);
 }
 
 #right {
@@ -55,7 +55,7 @@
 #username, #pass {
     margin-top: 20px;
     margin-left: 10px;
-    border: 3px solid var(--second);
+    border: 3px solid var(--maincolor);
     width: 200px;
     height: 20px;
     outline: none;

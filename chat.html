@@ -24,7 +24,7 @@
             <a href="./chat.html" id="menu-chat">Chat</a>
             <a href="./references.html" id="menu-references">References</a>
         </div>
-        <a href="./login.html" id="menu-login">Log In</a>
+        <button id="menu-login" onclick="loginbutton()">Log In</button>
     </div>
 
   <button id="backtop" onclick="scrolltop()"><p id="toparrow"><</p>Top</button>
@@ -81,6 +81,7 @@
         document.getElementById("menu-login").innerHTML = localStorage.getItem("logged");
       }
       if (localStorage.getItem("logged") != "My Account") {
+        localStorage.setItem("page", "." + "/" + window.location.pathname.split("/").pop());
         location.href = "./login.html";
       }
       var messagecount = 1;

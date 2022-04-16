@@ -57,10 +57,15 @@ $('.question4').on('click', function() {
 });
 
 /*login*/
+function loginbutton() {
+    localStorage.setItem("page", "." + "/" + window.location.pathname.split("/").pop());
+    location.href="./login.html";
+}
+
 function login() {
     if (document.getElementById("username").value == "John" && document.getElementById("pass").value == "12345") {
         localStorage.setItem("logged", "My Account");
-        location.href = "./index.html";
+        location.href = String(localStorage.getItem("page"));
     }
     else {
         document.getElementById("error").style.color = "red";
