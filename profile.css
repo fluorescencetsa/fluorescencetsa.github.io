@@ -17,6 +17,55 @@
 #previous {
     width: 100%;
 }
+input[type="file"] {
+    display: none;
+}
+
+#upload {
+    border: 4px solid var(--maincolor);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+#uploadbutton {
+    position: relative;
+    background: rgb(209, 218, 255);
+    width: 100%;
+    border-radius: 100%;
+    height: 100%;
+    font-family: "Poppins";
+    color: var(--maincolor);
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: 0.2s;
+    z-index: 1;
+}
+#filename {
+    font-size: 0px;
+    color: transparent;
+    transition: 0.2s;
+}
+.customupload {
+    cursor: pointer;
+    display: flex;
+}
+
+
+#myImg {
+    display: none;
+    
+}
 
 #labeled {
     font-family: "Poppins";

@@ -177,4 +177,31 @@
         width: 550px;
         margin-top: 100px;
     }
+    .infofader {
+        width: 110vw;
+    }
+    .yellowline {
+        display: none;
+    }
+    .infoimage {
+        width: 110vw;
+    }
+    #newsletter {
+        width: 110vw;
+        margin-bottom: 500px;
+    }
+    #newsletterinput {
+        width: 90vw;
+        height: 75px;
+        font-size: 40px;
+    }
+    #error {
+        font-size: 40px;
+    }
+    #subscribe {
+        width: 300px;
+        height: 100px;
+        font-size: 40px;
+        
+    }
 }

@@ -32,7 +32,17 @@
 
   <div id="photoform">
       <p id="titletext" style="margin-top: 150px">Your Profile</p>
-      <p id="message1">This username will be displayed to others in the chat.</p>
+
+      <div id="upload" onmouseover="darkenpfp()" onmouseleave="lightenpfp()">
+        <div id="uploadbutton">
+          <label class="customupload">
+            <input type="file" onchange="previewFile()">
+            <br><img id="myImg" src="#">
+            <p id="filename">✎</p><br>
+          </label>
+        </div>
+      </div>
+    
       <label id="labeled">Username: </label>
       <input type="text" id="un"><br>
 
@@ -141,6 +151,52 @@
           document.getElementById("upload1").style = "font-size: 0px; padding: 0;";
         }
       });
+
+      function previewFile() {
+        const preview = document.querySelector('img');
+        const file = document.querySelector('input[type=file]').files[0];
+        const reader = new FileReader();
+
+        reader.addEventListener("load", function () {
+          preview.src = reader.result;
+        }, false);
+
+        if (file) {
+          document.getElementById("myImg").style="display: block; width: 202px; height: 202px; border-radius: 100%; object-fit: cover;";
+          dataurl = reader.readAsDataURL(file);
+          console.log(dataurl);
+        }
+      }
+
+
+    function updatechange() {
+      document.getElementById("filename").style = "position: absolute; top: 5%; left: 40%; transform: translate(-50%, -50%); transform: rotate(90deg); font-size: 50px; color: white; text-shadow: 0px 0px 10px black";
+      document.getElementById("filename").innerHTML = "✎";
+    }
+
+    function darkenpfp() {
+      if (localStorage.getItem("pfpupload") == "true") {
+        updatechange();
+        document.getElementById("uploadbutton").style = "background:rgba(255, 244, 209, 1);";
+      }
+      else {
+        document.getElementById("filename").style = "color: var(--maincolor); font-size: 50px;";
+        document.getElementById("uploadbutton").style = "background:rgba(255, 244, 209, 1);";
+      }
+    }
+
+    function lightenpfp() {
+      if (localStorage.getItem("pfpupload") == "true") {
+        document.getElementById("filename").style = "position: absolute; top: 5%; left: 40%; transform: translate(-50%, -50%); transform: rotate(90deg); font-size: 0px; color: transparent;";
+        document.getElementById("filename").innerHTML = "✎";
+        document.getElementById("uploadbutton").style = "background:rgba(209, 218, 255, 1);";
+      }
+      else {
+        document.getElementById("filename").style = "color: var(--maincolor); font-size: 50px;";
+        document.getElementById("uploadbutton").style = "background:rgba(209, 218, 255, 1);";
+      }
+    }
+
   </script>
 </body>
 </html>

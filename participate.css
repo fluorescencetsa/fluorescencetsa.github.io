@@ -267,5 +267,45 @@
     #theme {
         font-size: 75px;
     }
+    #timesection {
+        width: 550px;
+        height: 200px;
+    }
+    #days, #hours, #minutes, #seconds {
+        margin-top: 40px;
+        font-size: 50px;
+    }
+    #word {
+        font-size: 50px;
+    }
+
+    .dateheader {
+        font-size: 55px;
+        width: 110vw;
+        border: none;
+        margin-top: 100px;
+    }
+    #dateboxes {
+        width: 110vw;
+        display: block;
+    }
+    #datebox {
+        display: flex;
+        width: 110vw;
+        margin-left: 0;
+        margin-top: 50px;
+        align-items: center;
+    }
+    #adate {
+        width: 250px;
+        height: 250px;
+        font-size: 50px;
+    }
+    #adateinfo {
+        font-size: 40px;
+        width: 700px;
+        text-align: left;
+        margin-left: 50px;
+    }
 }
 
